@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/my_bg_color"
+    tools:context=".Fragment.navigationfragment.profile.ClaimGiftCardFragment">
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_18sdp"
+        >
+        <ImageView
+            android:id="@+id/backBtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/normal_stroke"
+            />
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Possibility Credits"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+
+            />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            android:layout_marginVertical="@dimen/d8"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:src="@drawable/pizza2"
+                android:scaleType="fitXY"
+                />
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the 16 digits code  and the 6 digit PIN to Claim your gift card"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Gift Card code"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/brown"
+            android:layout_marginTop="@dimen/d8"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:letterSpacing="1"
+            android:text="dsjkhsiuvhsf"
+            android:backgroundTint="@color/brown"
+            android:layout_marginVertical="@dimen/d8"
+            android:inputType="number"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter PIN"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:letterSpacing="1"
+            android:text="dsjkhsiuvhsf"
+            android:backgroundTint="@color/brown"
+            android:drawableEnd="@drawable/visibility_off_icon"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/red"
+            android:layout_marginVertical="@dimen/d8"
+
+            android:inputType="number"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/brown"
+            android:layout_marginTop="18dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NOTE"
+            android:fontFamily="@font/osc_bold1"
+            android:textColor="@color/black"
+            android:layout_marginVertical="@dimen/d8"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gift card amount will gave the same expiry date as that of the gift card"
+            android:fontFamily="@font/osc_bold1"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/circle_icon"
+            android:drawablePadding="4dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="this balance can be easily userd at checkout"
+            android:fontFamily="@font/osc_bold1"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/circle_icon"
+            android:drawablePadding="4dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Claimed gift card cannot be transferred to another account"
+            android:fontFamily="@font/osc_bold1"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/circle_icon"
+            android:drawablePadding="4dp"
+            android:layout_marginBottom="300dp"
+            />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:padding="@dimen/_18sdp"
+        android:background="@color/white"
+        android:layout_gravity="bottom"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="By continuing, you agree to Qwikcilver's terms and conditions"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Claim"
+            android:backgroundTint="@color/brown"
+            android:layout_marginHorizontal="@dimen/_18sdp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/osc_bold1"
+            android:insetBottom="0dp"
+            android:insetTop="0dp"
+            android:layout_marginVertical="@dimen/d8"
+            />
+    </LinearLayout>
+
+</FrameLayout>

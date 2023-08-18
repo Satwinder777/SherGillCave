@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/d8"
+    tools:context=".Fragment.navigationfragment.delivery.bottomsheetfragment.MoreOptionsFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       >
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Katani Dhaba, Sweets and Snacks"
+           android:textColor="@color/black"
+           android:fontFamily="@font/osc_bold1"
+           android:layout_marginVertical="20dp"
+           android:textSize="@dimen/_18sdp"
+           />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Add to Likes"
+           android:drawableStart="@drawable/like_outline_icon"
+           android:drawablePadding="9dp"
+           android:gravity="center_vertical"
+           android:textSize="16sp"
+           android:fontFamily="@font/osc_medium"
+           android:textColor="@color/black"
+           />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Shares"
+           android:drawableStart="@drawable/share_outline"
+           android:drawablePadding="9dp"
+           android:gravity="center_vertical"
+           android:textSize="16sp"
+           android:fontFamily="@font/osc_medium"
+           android:textColor="@color/black"
+           android:layout_marginVertical="@dimen/d8"
+           />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Restaurant"
+           android:drawableStart="@drawable/fork_icon"
+           android:drawablePadding="9dp"
+           android:gravity="center_vertical"
+           android:textSize="16sp"
+           android:fontFamily="@font/osc_medium"
+           android:textColor="@color/black"
+           />
+   </LinearLayout>
+</FrameLayout>

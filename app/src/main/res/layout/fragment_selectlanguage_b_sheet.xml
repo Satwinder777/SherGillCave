@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/d8"
+    android:layout_gravity="top"
+    android:background="@color/gray1"
+
+    tools:context=".Fragment.navigationfragment.delivery.bottomsheetfragment.SelectlanguageBSheetFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/osc_bold1"
+            android:layout_marginStart="@dimen/d8"
+            android:textSize="18sp"
+            android:text="Choose your language"/>
+
+        <RadioGroup
+            android:id="@+id/radgroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/d8"
+            android:layout_marginVertical="@dimen/d8"
+            >
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/usa_icon1"
+                android:paddingHorizontal="@dimen/d8"
+                android:text="English"
+                android:background="@drawable/normal_card_bg"
+                android:padding="8dp"
+                android:layout_marginVertical="5dp"
+
+                />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/golden_temple"
+                android:paddingHorizontal="@dimen/d8"
+                android:text="Punjabi"
+                android:background="@drawable/normal_card_bg"
+                android:padding="8dp"
+                android:layout_marginVertical="5dp"
+
+                />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/lalkila_icon"
+                android:paddingHorizontal="@dimen/d8"
+                android:text="Hindi"
+                android:background="@drawable/normal_card_bg"
+                android:padding="8dp"
+                android:layout_marginVertical="5dp"
+                />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/aagra_icon"
+                android:paddingHorizontal="@dimen/d8"
+                android:text="Urdu"
+                android:background="@drawable/normal_card_bg"
+                android:padding="8dp"
+                android:layout_marginVertical="5dp"
+
+                />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/jain_icon"
+                android:paddingHorizontal="@dimen/d8"
+                android:text="Marathi"
+                android:background="@drawable/normal_card_bg"
+
+                android:padding="8dp"/>
+
+
+        </RadioGroup>
+    </LinearLayout>
+
+</FrameLayout>

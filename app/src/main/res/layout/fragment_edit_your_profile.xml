@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_bg_color"
+    android:padding="20dp"
+    tools:context=".Fragment.navigationfragment.profile.EditYourProfileFragment">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:background="@drawable/normal_card_bg"
+        android:padding="6dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Complete your profile"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginVertical="@dimen/_18sdp"
+        android:fontFamily="@font/osc_bold1"
+
+        />
+
+    <TextView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:text="S"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/white_circle_stroke"
+        android:fontFamily="@font/osc_bold1"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change photo"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:layout_marginVertical="8dp"
+        android:fontFamily="@font/osc_bold1"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_18sdp"
+
+        android:text="Name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:fontFamily="@font/osc_bold1"
+
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:imeActionLabel="Custom Label"
+        android:layout_marginBottom="@dimen/d8"
+        android:singleLine="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+
+        android:text="Phone Number"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:fontFamily="@font/osc_bold1"
+
+        android:inputType="phone"
+        android:imeOptions="actionNext"
+        android:layout_marginBottom="@dimen/d8"
+        android:singleLine="true"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+
+        android:text="Email"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:fontFamily="@font/osc_bold1"
+
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionNext"
+        android:layout_marginBottom="@dimen/d8"
+        android:singleLine="true"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+
+        android:text="Dob"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Birthday"
+        android:fontFamily="@font/osc_bold1"
+
+        android:inputType="datetime"
+        android:imeOptions="actionNext"
+        android:imeActionLabel="Custom Label"
+        android:layout_marginBottom="@dimen/d8"
+        android:singleLine="true"
+
+
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+
+        android:text="Gender"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/osc_bold1"
+        android:hint="Gender"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:imeActionLabel="Custom Label"
+        android:layout_marginBottom="@dimen/d8"
+        android:singleLine="true"
+
+
+        />
+    <!--    <com.google.android.material.textfield.TextInputLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:hint="Label Text">-->
+    <!--        </com.google.android.material.textfield.TextInputLayout>-->
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="update profile"
+        android:backgroundTint="@color/red"
+        android:layout_marginVertical="@dimen/_18sdp"
+        android:fontFamily="@font/osc_bold1"
+
+        />
+
+</LinearLayout>
+
+
+
+
+</androidx.core.widget.NestedScrollView>

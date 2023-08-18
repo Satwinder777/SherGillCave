@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">ZomatoPbs</string>
+    <string name="term">By continuing, you agree to our \n Terms of Service Privacy Policy Content Policy</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todo">my_todo</string>
+    <string name="verify_account">Verify Account</string>
+    <string name="resentotp">Resend Otp</string>
+    <string name="user_location">Possibility Solutions, c-127,4th \n floor, phase 8 mohali</string>
+    <string name="home_address">House no. 60 block H, Top floor, Tower H ,\nHousefed Complex 1, Sector 79.</string>
+    <string name="place_text">4th floor, C-127,Phase-8, Industrial Area, Sector 73, Sahibzada Ajit Singh Nagar, Punjab</string>
+    <string name="delivery_in_25_30_min"> Delivery in  <font fgcolor='#000000'>25-30 Min </font></string>
+    <string name="delivery_at"> Delivery at <font fgcolor='#000000'>House no. 60 block H, Top floor, Tower H , Housefed Complex 1, Sector 79.</font></string>
+    <string name="bill_payed"><font fgcolor='#000000'>Others</font>\n<font fgcolor='#858381'>*****94522</font></string>
+    <string name="_100_150">₹100<font fgcolor='#000000'> ₹150</font></string>
+    <string name="cancelation_policy">For 3 months at $245. You are or 3 months at $245. Yo now getting 15% OFF on this or 3 months at $245. Yo billFor 3 months at $245. You are or 3 months at $245. now getting 15% OFF on this</string>
+    <string name="visa_line"><![CDATA[We accept credit and debit cards from visa, Mastercard, Sodexo, Diners, American Express, Maestro, Rupay & Discover]]></string>
+    <string name="add_place">Add a Place\nin case we re  missing something</string>
+    <!--    <string name="already_added_places">Places you ve added \nSee all the places you've added so far</string>-->
+    <string name="edit_profile">Edit profile \nChange your name, description and profile photo</string>
+    <string name="notification_settings">notifications Setting \nDefine what alerts and notifications you want to see </string>
+    <string name="acc_settings">Account Setting \nDelete your account </string>
+    <string name="delivery_item">2 x <font fgcolor='#000000'>Onions Pizza</font> </string>
+    <string name="pese">₹100</string>
+    <string name="testline">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+Why do we use it?It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</string>
+    <string name="pizza">La pino’z Pizza</string>
+    <string name="place">Sector 67, Mohali</string>
+    <string name="feeding_reciept_text">If you\'re referring to the terms and conditions, legal disclaimers, or any other specific text that appears in Zomato\'s bottom sheet, I recommend checking directly within the Zomato app or contacting their customer support for accurate information. If you have a specific idea of what you want to convey in that section of the bottom sheet, you could create a custom message that outlines the purpose of collecting PAN details, any legal requirements, and how the information will be used. However, it\'s essential to ensure that the text complies with legal regulations and accurately represents the terms and conditions of PAN collection and usage.</string>
+    <string name="report_and_incident">Please use this form only for accident or abuse related emergency situations. For order or other general queries contact us here  <font fgcolor='#FF3700B3'>contact us here</font></string>
+
+</resources>

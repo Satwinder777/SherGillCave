@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray1"
+    android:padding="@dimen/d8"
+    tools:context=".Fragment.navigationfragment.delivery.bottomsheetfragment.DeliveryAtLocationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/_18sdp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/location_zomato_icon"
+                android:text="Delivery at Home"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:drawablePadding="@dimen/_18sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:text="change"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="House no.40 block H"
+            android:paddingHorizontal="50dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_marginVertical="25dp"/>
+
+        <LinearLayout
+            android:id="@+id/nextpage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="@dimen/d8"
+            android:background="@color/white"
+            >
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               >
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="hckjdshc"
+                   android:drawableEnd="@drawable/down_ic"
+                   android:drawableStart="@drawable/mastercard_icon"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:drawablePadding="8dp"
+
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="****4575"/>
+           </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Select Address next step"
+                android:textColor="@color/white"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:backgroundTint="@color/red"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    tools:context=".Fragment.navigationfragment.delivery.bottomsheetfragment.CompleteAddressFragment">
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical"
+         >
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textSize="24sp"
+             android:text="Enter complete address"
+             android:textColor="@color/black"
+             android:fontFamily="@font/osc_bold1"
+             />
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Save address as"
+             android:layout_marginTop="20dp"
+             android:layout_marginBottom="10dp"
+
+             />
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="10dp"
+             android:orientation="horizontal">
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:text="Home"
+                 android:textColor="@color/black"
+                 android:gravity="center"
+                 android:background="@drawable/normal_stroke"
+                 android:layout_margin="@dimen/d8"
+
+                 />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:text="Work"
+                 android:textColor="@color/black"
+                 android:background="@drawable/normal_stroke"
+                 android:layout_margin="@dimen/d8"
+                 android:gravity="center"
+                 />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:text="Hotel"
+                 android:textColor="@color/black"
+                 android:background="@drawable/normal_stroke"
+                 android:layout_margin="@dimen/d8"
+                 android:gravity="center"
+                 />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:text="Other"
+                 android:textColor="@color/black"
+                 android:background="@drawable/normal_stroke"
+                 android:layout_margin="@dimen/d8"
+                 android:gravity="center"
+                 />
+
+         </LinearLayout>
+
+         <EditText
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:hint="Company Building"
+             android:textColor="@color/black"
+             android:background="@drawable/normal_stroke"
+             android:layout_margin="@dimen/d8"
+             android:lines="1"
+             android:inputType="text"
+             android:imeOptions="actionNext"
+             android:singleLine="true"
+             />
+         <EditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="Flour"
+             android:textColor="@color/black"
+             android:background="@drawable/normal_stroke"
+             android:layout_margin="@dimen/d8"
+             android:lines="1"
+             android:inputType="text"
+             android:imeOptions="actionNext"
+             android:singleLine="true"
+
+
+             />
+         <EditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="Tower (optional)"
+             android:textColor="@color/black"
+             android:background="@drawable/normal_stroke"
+             android:layout_margin="@dimen/d8"
+             android:lines="1"
+             android:inputType="text"
+             android:imeOptions="actionNext"
+             android:singleLine="true"
+
+
+             />
+         <EditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="Nearby Landmark(optional)"
+             android:textColor="@color/black"
+             android:background="@drawable/normal_stroke"
+             android:layout_margin="@dimen/d8"
+             android:lines="1"
+             android:inputType="text"
+             android:imeOptions="actionDone"
+             android:singleLine="true"
+
+
+             />
+
+         <com.google.android.material.button.MaterialButton
+             android:id="@+id/saveAddress"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:backgroundTint="@color/red"
+             android:textColor="@color/white"
+             android:text="save Address"
+             android:insetTop="0dp"
+             android:insetBottom="0dp"
+             android:layout_marginVertical="@dimen/d8"
+             />
+
+
+
+     </LinearLayout>
+
+</FrameLayout>

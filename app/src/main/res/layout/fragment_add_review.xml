@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".Fragment.navigationfragment.profile.AddReviewFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_24"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Review"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textlarge"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rate your experience"
+            android:textAlignment="center"
+            android:layout_marginVertical="16dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/osc_medium"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <RadioButton
+                    android:id="@+id/radioButtonOption1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dining"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonOption2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="18dp"
+                    android:text="Delivery"/>
+
+
+                <!-- Add more radio buttons as needed -->
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="5"
+            android:layout_gravity="center"
+            android:layout_marginVertical="25dp"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/review_image"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        />
+
+
+
+
+
+
+
+
+</FrameLayout>

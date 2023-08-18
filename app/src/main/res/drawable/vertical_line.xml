@@ -1,0 +1,8 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:right="1dp" android:left="0dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#000000" /> <!-- Set the line color here -->
+            <size android:width="1dp" android:height="24dp" /> <!-- Adjust the line width and height -->
+        </shape>
+    </item>
+</layer-list>

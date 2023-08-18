@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.navigationfragment.profile.LogOutFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log out from?"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:layout_marginVertical="18dp"
+        android:textSize="@dimen/_18sdp"
+        android:fontFamily="@font/osc_bold1"
+        android:paddingTop="@dimen/d8"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/brown"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="current Device"
+        android:textColor="@color/red"
+        android:textAlignment="center"
+        android:layout_marginVertical="18dp"
+        android:textSize="@dimen/_18sdp"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/brown"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All Devices"
+        android:textColor="@color/red"
+        android:textAlignment="center"
+        android:layout_marginVertical="18dp"
+        android:textSize="@dimen/_18sdp"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/brown"
+        />
+
+    <TextView
+        android:id="@+id/cancel_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textAlignment="center"
+        android:layout_marginVertical="18dp"
+        android:textSize="@dimen/_18sdp"
+        android:fontFamily="@font/osc_bold1"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/brown"
+        />
+
+</LinearLayout>

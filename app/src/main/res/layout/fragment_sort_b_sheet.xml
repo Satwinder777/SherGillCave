@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_18sdp"
+    tools:context=".Fragment.navigationfragment.delivery.bottomsheetfragment.SortBSheetFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       >
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="22sp"
+           android:text="Sort"
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           android:fontFamily="@font/osc_bold1"
+           />
+
+       <RadioGroup
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           >
+
+
+           <RadioButton
+
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:button="@null"
+               android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+               android:background="?android:selectableItemBackground"
+               android:layout_gravity="start"
+               android:textAlignment="textStart"
+               android:paddingBottom="10dp"
+               android:paddingLeft="20dp"
+               android:paddingRight="20dp"
+               android:paddingTop="10dp"
+               android:text="Relevance"/>
+
+           <RadioButton
+               android:id="@+id/btn2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:button="@null"
+               android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+               android:background="?android:selectableItemBackground"
+               android:layout_gravity="start"
+               android:textAlignment="textStart"
+               android:paddingBottom="10dp"
+               android:paddingLeft="20dp"
+               android:paddingRight="20dp"
+               android:paddingTop="10dp"
+               android:text="Rating: High To Low" />
+
+           <RadioButton
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:button="@null"
+               android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+               android:background="?android:selectableItemBackground"
+               android:layout_gravity="start"
+               android:textAlignment="textStart"
+               android:paddingBottom="10dp"
+               android:paddingLeft="20dp"
+               android:paddingRight="20dp"
+               android:paddingTop="10dp"
+               android:text="Delivery Time: Low To High"/>
+
+           <RadioButton
+
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:button="@null"
+               android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+               android:background="?android:selectableItemBackground"
+               android:layout_gravity="start"
+               android:textAlignment="textStart"
+               android:paddingBottom="10dp"
+               android:paddingLeft="20dp"
+               android:paddingRight="20dp"
+               android:paddingTop="10dp"
+               android:text="Delivery Time  Relevance" />
+
+           <RadioButton
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:button="@null"
+               android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+               android:background="?android:selectableItemBackground"
+               android:layout_gravity="start"
+               android:textAlignment="textStart"
+               android:paddingBottom="10dp"
+               android:paddingLeft="20dp"
+               android:paddingRight="20dp"
+               android:paddingTop="10dp"
+               android:text="Distance: Low To High"/>
+
+           <RadioButton
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:button="@null"
+               android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+               android:background="?android:selectableItemBackground"
+               android:layout_gravity="start"
+               android:textAlignment="textStart"
+               android:paddingBottom="10dp"
+               android:paddingLeft="20dp"
+               android:paddingRight="20dp"
+               android:paddingTop="10dp"
+               android:text="Cost: Low To High" />
+
+           <RadioButton
+               android:id="@+id/btn1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:button="@null"
+               android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+               android:background="?android:selectableItemBackground"
+               android:layout_gravity="start"
+               android:textAlignment="textStart"
+               android:paddingBottom="10dp"
+               android:paddingLeft="20dp"
+               android:paddingRight="20dp"
+               android:paddingTop="10dp"
+               android:text="Cost: High To Low"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               >
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="Clear All"
+                   android:textColor="@color/red"
+                   android:fontFamily="@font/osc_bold1"
+                   android:gravity="center"
+                   />
+
+               <com.google.android.material.button.MaterialButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="Apply"
+                   android:backgroundTint="@color/red"
+                   android:textColor="@color/white"
+                   />
+           </LinearLayout>
+
+
+
+       </RadioGroup>
+   </LinearLayout>
+
+</FrameLayout>

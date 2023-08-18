@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/messageLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:background="@drawable/msg_bg_left"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Possibility Support"
+            android:textColor="@color/purple_700"
+            />
+        <TextView
+            android:id="@+id/myTextMessage"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="hi sher gill satwinder this is the confirmation mail. \n987799"
+            android:layout_marginVertical="@dimen/d8"
+            android:textColor="@android:color/white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6:24 PM"
+            android:layout_gravity="end"
+            android:textColor="@color/teal_700" />
+
+    </LinearLayout>
+</LinearLayout>

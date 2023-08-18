@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/my_bg_color"
+    tools:context=".Fragment.navigationfragment.profile.FeedBackFragment">
+
+    <ImageView
+        android:id="@+id/backBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/normal_stroke"
+        />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Report a Safety Emergency"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginTop="20sp"
+        android:textAllCaps="false"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Feedback"
+        android:textColor="@color/black"
+        android:fontFamily="@font/osc_medium"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tell us what you love about the app, or what we could be doing better."
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="Enter feedback"
+        android:textColorHint="@color/red"
+        android:backgroundTint="@color/red"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/normal_card_bg"
+        android:padding="@dimen/_18sdp"
+        >
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/star_outline_icon"
+            android:layout_gravity="center"
+
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/d8"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Need help with your order?"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get instant help from our customer support team"
+                android:layout_marginTop="@dimen/d8"
+                android:textColor="@color/black"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

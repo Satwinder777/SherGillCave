@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".Fragment.navigationfragment.delivery.FeedingIndiaFragment">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Feeding India Donation Receipt"
+        android:textColor="@color/black"
+        android:layout_marginVertical="@dimen/d8"
+        android:fontFamily="@font/osc_bold1"
+        android:textSize="20sp"
+        />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/brown"
+                />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter your pan details"
+        android:textColor="@color/black"
+        android:layout_marginVertical="@dimen/d8"
+        android:fontFamily="@font/osc_bold1"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/feeding_reciept_text"
+        android:fontFamily="@font/osc_medium"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="PAN Card Number"
+        android:layout_marginTop="30sp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Submit"
+        android:backgroundTint="@color/my_bg_color"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:textColor="@color/brown"/>
+
+
+</LinearLayout>

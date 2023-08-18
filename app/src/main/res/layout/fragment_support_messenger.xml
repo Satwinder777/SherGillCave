@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@color/my_bg_color"
+    tools:context=".Fragment.navigationfragment.profile.SupportMessengerFragment">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:layout_marginBottom="39dp"
+
+      >
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/baseline_arrow_back_24"
+          android:background="@drawable/normal_stroke"
+
+          />
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Possibility Support"
+          android:textColor="@color/black"
+          android:textSize="24sp"
+          android:fontFamily="@font/osc_bold1"
+
+          />
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/supportRc"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          tools:listitem="@layout/item_massage_support_rc"
+          app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+          android:layout_marginVertical="@dimen/_18sdp"
+          />
+
+
+  </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_gravity="bottom"
+
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/brown"
+        android:layout_marginVertical="@dimen/d8"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add_icon"
+            android:layout_gravity="center"
+            app:tint="@color/red" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:drawableEnd="@drawable/camera_icon"
+            android:background="@drawable/stroke_brown"
+            android:padding="6dp"
+            android:drawablePadding="@dimen/d8"
+            android:hint="type your massage here...."
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="@dimen/d8"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mic_icon"
+            android:layout_gravity="center"
+
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+</FrameLayout>

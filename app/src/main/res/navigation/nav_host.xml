@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        app:startDestination="@id/DeliveryFragment"
+     >
+
+        <fragment
+            android:id="@+id/DeliveryFragment"
+            android:name="com.example.zomatopbs.Fragment.navigationfragment.delivery.DeliveryFragment"
+            android:label="fragment_home"
+            tools:layout="@layout/fragment_delivery" >
+
+        </fragment>
+        <fragment
+            android:id="@+id/DingingFragment"
+            android:name="com.example.zomatopbs.Fragment.navigationfragment.dining.DingingFragment"
+            android:label="fragment_search"
+            tools:layout="@layout/fragment_dinging" >
+
+        </fragment>
+        <fragment
+            android:id="@+id/GroceryFragment"
+            android:name="com.example.zomatopbs.Fragment.navigationfragment.grocery.GroceryFragment"
+            android:label="fragment_favorate"
+            tools:layout="@layout/fragment_grocery"
+            >
+
+        </fragment>
+
+        <!--    <fragment-->
+        <!--        android:id="@+id/blogsFragment"-->
+        <!--        android:name="com.example.tripplnr.navigationscreens.Search.blog.BlogsFragment"-->
+        <!--        android:label="fragment_blogs"-->
+        <!--        tools:layout="@layout/fragment_blogs" />-->
+
+        <fragment
+            android:id="@+id/MoneyFragment"
+            android:name="com.example.zomatopbs.Fragment.navigationfragment.money.MoneyFragment"
+            android:label="fragment_account"
+            tools:layout="@layout/fragment_money" />
+    <fragment
+        android:id="@+id/selectLocationFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.delivery.SelectLocationFragment"
+        android:label="fragment_select_location"
+        tools:layout="@layout/fragment_select_location" />
+    <fragment
+        android:id="@+id/chooseDeliveryLocationFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.delivery.ChooseDeliveryLocationFragment"
+        android:label="fragment_choose_delivery_location"
+        tools:layout="@layout/fragment_choose_delivery_location" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/previewDetailFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.delivery.PreviewDetailFragment"
+        android:label="fragment_preview_detail"
+        tools:layout="@layout/fragment_preview_detail" />
+    <fragment
+        android:id="@+id/completeAddressFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.delivery.bottomsheetfragment.CompleteAddressFragment"
+        android:label="fragment_complete_address"
+        tools:layout="@layout/fragment_complete_address" />
+    <fragment
+        android:id="@+id/foodDetailsFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.delivery.FoodDetailsFragment"
+        android:label="fragment_food_details"
+        tools:layout="@layout/fragment_food_details" />
+    <fragment
+        android:id="@+id/orderSummaryFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.delivery.OrderSummaryFragment"
+        android:label="fragment_order_summary"
+        tools:layout="@layout/fragment_order_summary" />
+    <fragment
+        android:id="@+id/prepareYourOrderFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.delivery.PrepareYourOrderFragment"
+        android:label="fragment_prepare_your_order"
+        tools:layout="@layout/fragment_prepare_your_order" />
+    <fragment
+        android:id="@+id/likesFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.profile.LikesFragment"
+        android:label="fragment_likes"
+        tools:layout="@layout/fragment_likes" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.profile.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/paymentMethodFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.delivery.PaymentMethodFragment"
+        android:label="fragment_payment_method"
+        tools:layout="@layout/fragment_payment_method" />
+    <fragment
+        android:id="@+id/addReviewFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.profile.AddReviewFragment"
+        android:label="fragment_add_review"
+        tools:layout="@layout/fragment_add_review" />
+    <fragment
+        android:id="@+id/viewActivityFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.profile.ViewActivityFragment"
+        android:label="fragment_view_activity"
+        tools:layout="@layout/fragment_view_activity" />
+    <fragment
+        android:id="@+id/editYourProfileFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.profile.EditYourProfileFragment"
+        android:label="fragment_edit_your_profile"
+        tools:layout="@layout/fragment_edit_your_profile" />
+    <fragment
+        android:id="@+id/orderHistoryFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.profile.OrderHistoryFragment"
+        android:label="fragment_order_history"
+        tools:layout="@layout/fragment_order_history" />
+    <fragment
+        android:id="@+id/supportMessengerFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.profile.SupportMessengerFragment"
+        android:label="fragment_support_messenger"
+        tools:layout="@layout/fragment_support_messenger" />
+    <fragment
+        android:id="@+id/editionWalletFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.profile.EditionWalletFragment"
+        android:label="fragment_edition_wallet"
+        tools:layout="@layout/fragment_edition_wallet" />
+    <fragment
+        android:id="@+id/editionWalletFaqsFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.profile.EditionWalletFaqsFragment"
+        android:label="fragment_edition_wallet_faqs"
+        tools:layout="@layout/fragment_edition_wallet_faqs" />
+    <fragment
+        android:id="@+id/possibilityGoldFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.profile.PossibilityGoldFragment"
+        android:label="fragment_possibility_gold"
+        tools:layout="@layout/fragment_possibility_gold" />
+    <fragment
+        android:id="@+id/orderHistory1Fragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.profile.OrderHistory1Fragment"
+        android:label="order_history1"
+        tools:layout="@layout/order_history1" />
+    <fragment
+        android:id="@+id/yourTransactionsFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.profile.YourTransactionsFragment"
+        android:label="fragment_your_transactions"
+        tools:layout="@layout/fragment_your_transactions" />
+    <fragment
+        android:id="@+id/yourDiningRewardFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.profile.YourDiningRewardFragment"
+        android:label="fragment_your_dining_reward"
+        tools:layout="@layout/fragment_your_dining_reward" />
+    <fragment
+        android:id="@+id/tableBookingFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.profile.TableBookingFragment"
+        android:label="fragment_table_booking"
+        tools:layout="@layout/fragment_table_booking" />
+    <fragment
+        android:id="@+id/reportSafetyEmergencyFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.delivery.ReportSafetyEmergencyFragment"
+        android:label="fragment_report_safety_emergency"
+        tools:layout="@layout/fragment_report_safety_emergency" />
+    <fragment
+        android:id="@+id/feedBackFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.profile.FeedBackFragment"
+        android:label="fragment_feed_back"
+        tools:layout="@layout/fragment_feed_back" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.profile.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/zomatoCreditsFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.profile.ZomatoCreditsFragment"
+        android:label="fragment_zomato_credits"
+        tools:layout="@layout/fragment_zomato_credits" />
+    <fragment
+        android:id="@+id/claimGiftCardFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.profile.ClaimGiftCardFragment"
+        android:label="fragment_claim_gift_card"
+        tools:layout="@layout/fragment_claim_gift_card" />
+
+
+</navigation>
+

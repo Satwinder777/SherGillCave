@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.navigationfragment.delivery.PreviewDetailFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_arrow_back_24" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="200dp"
+                android:layout_weight="1"
+
+                android:src="@drawable/searchview_icon" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:paddingHorizontal="5dp"
+
+                android:scaleType="fitXY"
+
+                android:src="@drawable/like_outline_icon" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="8dp"
+
+                android:src="@drawable/share_outline" />
+
+            <ImageView
+                android:id="@+id/moreOption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/more_vertical"
+
+                android:textAlignment="viewEnd" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/osc_bold1"
+                android:text="Paratha Junction 24*7"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="19sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center"
+                android:drawableStart="@drawable/like_filled_icon"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:paddingHorizontal="5dp"
+                android:text="Pure Veg .North Indian beverages "
+
+                />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="10sp"
+    android:padding="10dp"
+    android:layout_gravity="center"
+
+    >
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Base.Widget.AppCompat.RatingBar.Small"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="5dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/osc_medium"
+        android:text="4.4K ratings"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical"
+
+
+        tools:ignore="RtlCompat" />
+
+</LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:background="@drawable/normal_stroke"
+                android:backgroundTint="@color/gray2"
+                android:drawableStart="@drawable/like_outline_icon"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/osc_medium"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="25-30 min . 1Km  Phase 5"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+
+
+                tools:listitem="@layout/offer_slider_item" />
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/normal_stroke"
+                android:drawableStart="@drawable/bestseller_badge"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:padding="5dp"
+                android:text="BestSeller"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/normal_stroke"
+                android:drawableStart="@drawable/top_rated_ic"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:padding="5dp"
+                android:text="BestSeller"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/normal_stroke"
+                android:drawableStart="@drawable/like_outline_icon"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:padding="5dp"
+                android:text="BestSeller"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/normal_stroke"
+                android:drawableStart="@drawable/filters"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:padding="5dp"
+                android:text="BestSeller"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:drawableEnd="@drawable/up_arrow_ic"
+            android:text="Recommended"
+
+            android:fontFamily="@font/osc_bold1"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/detailedItemRc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:listitem="@layout/recommended_receipe"
+
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/menuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="50dp"
+        app:backgroundTint="@color/black"
+
+        app:icon="@drawable/serving_menu_icon"/>
+</FrameLayout>

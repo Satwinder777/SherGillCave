@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".Fragment.navigationfragment.delivery.AddCardFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/baseline_arrow_back_24"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/osc_medium"
+            android:gravity="center_vertical"
+            android:text="Add a card"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/visa_line"
+            android:layout_marginVertical="18dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/osc_medium"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:hint="Name on card"
+            android:lines="1"
+            android:backgroundTint="@color/stroke_brown"
+            android:imeOptions="actionNext"
+            android:fontFamily="@font/osc_medium"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:hint="Card number"
+            android:lines="1"
+            android:backgroundTint="@color/stroke_brown"
+            android:layout_marginVertical="5dp"
+            android:fontFamily="@font/osc_medium"
+
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:hint="Expiry date (MM/YY)"
+            android:backgroundTint="@color/stroke_brown"
+            android:fontFamily="@font/osc_medium"
+
+            android:lines="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:text="Nick name for the card"
+            android:fontFamily="@font/osc_medium"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/red_stroke_bg"
+                android:backgroundTint="@color/red"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="12dp"
+                android:text="personal"
+                android:textColor="@color/white"
+                android:fontFamily="@font/osc_medium"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/red_stroke_bg"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="12dp"
+                android:text="bussiness"
+                android:fontFamily="@font/osc_medium"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/red_stroke_bg"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="12dp"
+                android:text="Others"
+                android:fontFamily="@font/osc_medium"
+
+                />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Make payment"
+            android:backgroundTint="@color/red"
+            android:layout_marginVertical="18dp"
+            android:paddingVertical="15dp"
+            android:textAllCaps="false"
+            />
+    </LinearLayout>
+
+
+</FrameLayout>

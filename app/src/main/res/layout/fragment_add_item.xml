@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#80DFC7C7"
+    tools:context=".Fragment.navigationfragment.delivery.AddItemFragment">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      >
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:padding="@dimen/d8"
+          android:background="@drawable/red_stroke_bg"
+          android:layout_margin="@dimen/d8"
+          android:backgroundTint="@color/white"
+
+          >
+          <ImageView
+              android:id="@+id/pizzademo"
+              android:layout_width="match_parent"
+              android:layout_height="200dp"
+              android:src="@drawable/pizza2"
+              android:scaleType="fitXY"
+
+              />
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/vegetarian_sign_icon"
+              android:layout_marginVertical="5dp"
+              />
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              >
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Alluo Samosa [1 pieces ]"
+                  android:layout_weight="1"
+                  android:layout_gravity="center"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/_18sdp"
+                  android:fontFamily="@font/osc_bold1"
+
+
+                  />
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/like_outline_icon"
+                  android:background="@drawable/normal_stroke"
+                  android:layout_marginHorizontal="5dp"
+                  />
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/share_outline"
+                  android:background="@drawable/normal_stroke"
+                  />
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              >
+
+              <RatingBar
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  style = "?android:attr/ratingBarStyleSmall"
+                  android:numStars = "5"
+                  android:rating   = "4"
+                  android:layout_gravity="center"
+
+                  />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="1K Rating"
+                  android:layout_marginHorizontal="@dimen/d8"
+
+                  />
+          </LinearLayout>
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Sweet and juice shdhsd fkf djkkkytt diidkmmd"
+              />
+      </LinearLayout>
+      <LinearLayout
+          android:id="@+id/itemAdded"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_gravity="bottom"
+          android:background="@color/white"
+          android:paddingVertical="12dp"
+          android:layout_marginVertical="12dp"
+          >
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginHorizontal="@dimen/d8"
+              android:background="@drawable/red_stroke_bg"
+              android:drawableStart="@drawable/subtract_minus_icon"
+              android:drawableEnd="@drawable/add_icon"
+              android:gravity="center"
+              android:padding="@dimen/d8"
+              android:text="12"
+              android:drawablePadding="@dimen/d8"
+              android:textAlignment="center" />
+
+          <com.google.android.material.button.MaterialButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Add item $106"
+              android:textColor="@color/white"
+              android:backgroundTint="@color/red"
+              android:layout_weight="1"
+              />
+      </LinearLayout>
+
+  </LinearLayout>
+
+
+
+</FrameLayout>
