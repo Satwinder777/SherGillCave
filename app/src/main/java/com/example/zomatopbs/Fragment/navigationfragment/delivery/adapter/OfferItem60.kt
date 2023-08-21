@@ -1,20 +1,21 @@
 package com.example.zomatopbs.Fragment.navigationfragment.delivery.adapter
 
 
+
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.zomatopbs.R
 
-class OfferItemAdapter(val list: MutableList<OfferModelCls>,val onclick :OnOfferItemClick):RecyclerView.Adapter<OfferItemAdapter.OfferCls>() {
+class OfferItem60(val list: MutableList<OfferModelCls>, val onclick: OnOfferItemClick?):RecyclerView.Adapter<OfferItem60.OfferCls>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): OfferCls {
-        val myView = LayoutInflater.from(parent.context).inflate(R.layout.offer_item1,parent,false)
+        val myView = LayoutInflater.from(parent.context).inflate(R.layout.off_deal_item_rc_60,parent,false)
         return OfferCls(myView)
     }
 
@@ -27,20 +28,20 @@ class OfferItemAdapter(val list: MutableList<OfferModelCls>,val onclick :OnOffer
         holder.apply {
             bind(item)
             itemView.setOnClickListener {
-                onclick.onclickofferitem(position)
+                onclick?.onclickofferitem(position)
             }
         }
 
     }
     class OfferCls(view: View):RecyclerView.ViewHolder(view) {
         //        val sortxt = view.findViewById<TextView>(R.id.myText)
-        val offer_item1 = view.findViewById<ImageView>(R.id.offer_img)
+        val offer_item1 = view.findViewById<ImageView>(R.id.imageoffer)
 //        val offer_item2 = view.findViewById<ImageView>(R.id.recomm_img2)
 
-        val offer_item_title1 = view.findViewById<TextView>(R.id.offer_title)
+        val offer_item_title1 = view.findViewById<TextView>(R.id.textoffer1)
 //        val offer_item_title2 = view.findViewById<TextView>(R.id.recomm_title2)
 
-        val recomm_offer_txt1 = view.findViewById<TextView>(R.id.offer_text)
+        val recomm_offer_txt1 = view.findViewById<TextView>(R.id.textoffer2)
 //        val recomm_offer_txt2 = view.findViewById<TextView>(R.id.recomm_offer2)
 
 //        val recomm_time1 = view.findViewById<TextView>(R.id.recomm_time1)
@@ -66,13 +67,7 @@ class OfferItemAdapter(val list: MutableList<OfferModelCls>,val onclick :OnOffer
 
     }
 
-interface OnOfferItemClick{
-   fun onclickofferitem(position: Int)
+    interface OnOfferItemClick{
+        fun onclickofferitem(position: Int)
+    }
 }
-}
-data class OfferModelCls(
-    val offerImg :Int,
-    val offerTitle :String,
-    val offerText :String
-
-)

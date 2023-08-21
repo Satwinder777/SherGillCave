@@ -26,7 +26,6 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:lines="1"
             android:hint="Search for your liked restaurants"
             android:background="@drawable/red_stroke_bg"
             android:drawableStart="@drawable/searchview_icon"
@@ -36,6 +35,7 @@
             android:layout_marginTop="8dp"
             android:drawableTint="@color/red"
             android:fontFamily="@font/osc_medium"
+            android:singleLine="true"
 
             />
 

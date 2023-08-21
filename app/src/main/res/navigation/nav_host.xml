@@ -179,7 +179,26 @@
         android:name="com.example.zomatopbs.Fragment.navigationfragment.profile.ClaimGiftCardFragment"
         android:label="fragment_claim_gift_card"
         tools:layout="@layout/fragment_claim_gift_card" />
-
+    <fragment
+        android:id="@+id/eventTicketFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.profile.EventTicketFragment"
+        android:label="fragment_event_ticket"
+        tools:layout="@layout/fragment_event_ticket" />
+    <fragment
+        android:id="@+id/askQuestionFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.profile.AskQuestionFragment"
+        android:label="fragment_ask_question"
+        tools:layout="@layout/fragment_ask_question" />
+    <fragment
+        android:id="@+id/offersFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.delivery.OffersFragment"
+        android:label="fragment_offers"
+        tools:layout="@layout/fragment_offers" />
+    <fragment
+        android:id="@+id/gourmetFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.delivery.GourmetFragment"
+        android:label="fragment_gourmet"
+        tools:layout="@layout/fragment_gourmet" />
 
 </navigation>
 

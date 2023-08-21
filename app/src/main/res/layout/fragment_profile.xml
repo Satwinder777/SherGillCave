@@ -116,7 +116,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:layout_marginHorizontal="15dp"
                 android:orientation="horizontal">
 
@@ -252,8 +252,8 @@
                         android:textStyle="bold"
                         android:layout_marginEnd="16sp"
                         android:drawablePadding="16dp"
-                        android:drawableStart="@drawable/vertical_line_bg"
-                        android:text="Food Orders" />
+                        android:text="Food Orders"
+                        app:drawableStartCompat="@drawable/vertical_line_bg" />
 
                     <LinearLayout
                         android:id="@+id/yourorders"
@@ -263,8 +263,8 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="24dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:layout_gravity="center"
                             android:layout_marginHorizontal="8dp"
                             android:adjustViewBounds="true"
@@ -305,8 +305,8 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginHorizontal="8dp"
                             android:adjustViewBounds="true"
@@ -347,8 +347,8 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:src="@drawable/location_zomato_icon"
                             android:layout_gravity="center"
                             android:background="@drawable/circleshape_bg"
@@ -388,8 +388,8 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:src="@drawable/trolly_icon"
                             android:layout_gravity="center"
                             android:background="@drawable/circleshape_bg"
@@ -452,33 +452,16 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginHorizontal="@dimen/d2"
-                            android:layout_marginVertical="@dimen/d1"
-                            app:cardCornerRadius="@dimen/d2">
-
-                            <androidx.constraintlayout.widget.ConstraintLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_margin="@dimen/d1">
-
-                                <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:src="@drawable/zomato_wallet1_icon"
-                                    android:text="TextView"
-                                    android:textAlignment="center"
-                                    app:layout_constraintBottom_toBottomOf="parent"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintHorizontal_bias="0.5"
-                                    app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintVertical_bias="0.5" />
-                            </androidx.constraintlayout.widget.ConstraintLayout>
-
-                        </androidx.cardview.widget.CardView>
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/zomato_wallet1_icon"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circleshape_bg"
+                            app:tint="@color/red"
+                            android:adjustViewBounds="true"
+                            android:layout_marginHorizontal="8dp"
+                            android:backgroundTint="@color/gray1"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -511,35 +494,16 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginHorizontal="@dimen/d2"
-                            android:layout_marginVertical="@dimen/d1"
-                            app:cardCornerRadius="@dimen/d2">
-
-                            <androidx.constraintlayout.widget.ConstraintLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_margin="@dimen/d1">
-
-                                <ImageView
-                                    android:layout_width="24dp"
-                                    android:layout_height="24dp"
-                                    android:src="@drawable/question_mark_icon"
-                                    android:text="TextView"
-                                    android:textAlignment="center"
-                                    app:layout_constraintBottom_toBottomOf="parent"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintHorizontal_bias="0.5"
-                                    app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    android:tint="@color/red"
-
-                                    app:layout_constraintVertical_bias="0.5" />
-                            </androidx.constraintlayout.widget.ConstraintLayout>
-
-                        </androidx.cardview.widget.CardView>
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/question_mark_icon"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circleshape_bg"
+                            app:tint="@color/red"
+                            android:adjustViewBounds="true"
+                            android:layout_marginHorizontal="8dp"
+                            android:backgroundTint="@color/gray1"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -574,35 +538,16 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="@dimen/d2"
-                        android:layout_marginVertical="@dimen/d1"
-                        app:cardCornerRadius="@dimen/d2">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="@dimen/d1">
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/star_filled_icon"
-                                app:tint="@color/yellow"
-                                android:backgroundTint="@color/yellow"
-
-                                android:textAlignment="center"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintHorizontal_bias="0.5"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:layout_constraintVertical_bias="0.5" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    </androidx.cardview.widget.CardView>
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/star_outline_icon"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circleshape_bg"
+                        app:tint="@color/yellow"
+                        android:adjustViewBounds="true"
+                        android:layout_marginHorizontal="8dp"
+                        android:backgroundTint="@color/gray1"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -654,33 +599,16 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginHorizontal="@dimen/d2"
-                            android:layout_marginVertical="@dimen/d1"
-                            app:cardCornerRadius="@dimen/d2">
-
-                            <androidx.constraintlayout.widget.ConstraintLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_margin="@dimen/d1">
-
-                                <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:src="@drawable/box_icon"
-                                    android:text="TextView"
-                                    android:textAlignment="center"
-                                    app:layout_constraintBottom_toBottomOf="parent"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintHorizontal_bias="0.5"
-                                    app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintVertical_bias="0.5" />
-                            </androidx.constraintlayout.widget.ConstraintLayout>
-
-                        </androidx.cardview.widget.CardView>
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/location_zomato_icon"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circleshape_bg"
+                            app:tint="@color/red"
+                            android:adjustViewBounds="true"
+                            android:layout_marginHorizontal="8dp"
+                            android:backgroundTint="@color/gray1"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -713,33 +641,16 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginHorizontal="@dimen/d2"
-                            android:layout_marginVertical="@dimen/d1"
-                            app:cardCornerRadius="@dimen/d2">
-
-                            <androidx.constraintlayout.widget.ConstraintLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_margin="@dimen/d1">
-
-                                <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:src="@drawable/bucket1_icon"
-                                    android:text="TextView"
-                                    android:textAlignment="center"
-                                    app:layout_constraintBottom_toBottomOf="parent"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintHorizontal_bias="0.5"
-                                    app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintVertical_bias="0.5" />
-                            </androidx.constraintlayout.widget.ConstraintLayout>
-
-                        </androidx.cardview.widget.CardView>
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/bucket1_icon"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circleshape_bg"
+                            app:tint="@color/red"
+                            android:adjustViewBounds="true"
+                            android:layout_marginHorizontal="8dp"
+                            android:backgroundTint="@color/gray1"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -793,18 +704,20 @@
                         android:id="@+id/yourTransaction"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                         >
 
 
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:src="@drawable/zomato_wallet1_icon"
-                            android:background="@drawable/circleshape_bg"
-                            android:layout_marginHorizontal="@dimen/d2"
-                            android:layout_marginVertical="@dimen/d1"
                             android:layout_gravity="center"
-                            />
+                            android:background="@drawable/circleshape_bg"
+                            app:tint="@color/red"
+                            android:adjustViewBounds="true"
+                            android:layout_marginHorizontal="8dp"
+                            android:backgroundTint="@color/gray1"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -838,14 +751,15 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:src="@drawable/badge1_icon"
-                            android:background="@drawable/circleshape_bg"
-                            android:layout_marginHorizontal="@dimen/d2"
-                            android:layout_marginVertical="@dimen/d1"
                             android:layout_gravity="center"
-                            />
+                            android:background="@drawable/circleshape_bg"
+                            app:tint="@color/red"
+                            android:adjustViewBounds="true"
+                            android:layout_marginHorizontal="8dp"
+                            android:backgroundTint="@color/gray1"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -879,14 +793,15 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:src="@drawable/calender_icon"
-                            android:background="@drawable/circleshape_bg"
-                            android:layout_marginHorizontal="@dimen/d2"
-                            android:layout_marginVertical="@dimen/d1"
                             android:layout_gravity="center"
-                            />
+                            android:background="@drawable/circleshape_bg"
+
+                            android:adjustViewBounds="true"
+                            android:layout_marginHorizontal="8dp"
+                            android:backgroundTint="@color/gray1"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -914,20 +829,21 @@
                         android:background="@color/brown" />
 
                     <LinearLayout
-                        android:id="@+id/diningHelp"
+                        android:id="@+id/diningHelp12"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:src="@drawable/calender_icon"
-                            android:background="@drawable/circleshape_bg"
-                            android:layout_marginHorizontal="@dimen/d2"
-                            android:layout_marginVertical="@dimen/d1"
                             android:layout_gravity="center"
-                            />
+                            android:background="@drawable/circleshape_bg"
+
+                            android:adjustViewBounds="true"
+                            android:layout_marginHorizontal="8dp"
+                            android:backgroundTint="@color/gray1"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -954,20 +870,21 @@
                         android:layout_marginStart="67dp"
                         android:background="@color/brown" />
                     <LinearLayout
-                        android:id="@+id/tableReservation1"
+                        android:id="@+id/tableReservationhelp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:src="@drawable/calender_icon"
-                            android:background="@drawable/circleshape_bg"
-                            android:layout_marginHorizontal="@dimen/d2"
-                            android:layout_marginVertical="@dimen/d1"
                             android:layout_gravity="center"
-                            />
+                            android:background="@drawable/circleshape_bg"
+
+                            android:adjustViewBounds="true"
+                            android:layout_marginHorizontal="8dp"
+                            android:backgroundTint="@color/gray1"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1001,16 +918,15 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:src="@drawable/question_mark_icon"
-                            android:background="@drawable/circleshape_bg"
-                            android:layout_marginHorizontal="@dimen/d2"
-                            android:layout_marginVertical="@dimen/d1"
                             android:layout_gravity="center"
-                            android:tint="@color/red"
-
-                            />
+                            android:background="@drawable/circleshape_bg"
+                            app:tint="@color/red"
+                            android:adjustViewBounds="true"
+                            android:layout_marginHorizontal="8dp"
+                            android:backgroundTint="@color/gray1"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1061,20 +977,22 @@
                         android:text="Events" />
 
                     <LinearLayout
+
                         android:id="@+id/youreventticket"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:src="@drawable/star_pass_icon"
-                            android:background="@drawable/circleshape_bg"
-                            android:layout_marginHorizontal="@dimen/d2"
-                            android:layout_marginVertical="@dimen/d1"
                             android:layout_gravity="center"
-                            />
+                            android:background="@drawable/circleshape_bg"
+                            app:tint="@color/red"
+                            android:adjustViewBounds="true"
+                            android:layout_marginHorizontal="8dp"
+                            android:backgroundTint="@color/gray1"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1097,19 +1015,21 @@
 
 
                     <LinearLayout
+                        android:id="@+id/eventhelp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:src="@drawable/normal_pass_icon"
-                            android:background="@drawable/circleshape_bg"
-                            android:layout_marginHorizontal="@dimen/d2"
-                            android:layout_marginVertical="@dimen/d1"
                             android:layout_gravity="center"
-                            />
+                            android:background="@drawable/circleshape_bg"
+                            app:tint="@color/red"
+                            android:adjustViewBounds="true"
+                            android:layout_marginHorizontal="8dp"
+                            android:backgroundTint="@color/gray1"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1138,20 +1058,21 @@
                         android:background="@color/brown" />
 
                     <LinearLayout
+                        android:id="@+id/frequentlyaskquestEvent"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:src="@drawable/question_mark_icon"
-                            android:background="@drawable/circleshape_bg"
-                            android:layout_marginHorizontal="@dimen/d2"
-                            android:layout_marginVertical="@dimen/d1"
                             android:layout_gravity="center"
-                            android:tint="@color/red"
-                            />
+                            android:background="@drawable/circleshape_bg"
+                            app:tint="@color/red"
+                            android:adjustViewBounds="true"
+                            android:layout_marginHorizontal="8dp"
+                            android:backgroundTint="@color/gray1"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1208,14 +1129,15 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:src="@drawable/zomato_wallet1_icon"
-                            android:background="@drawable/circleshape_bg"
-                            android:layout_marginHorizontal="@dimen/d2"
-                            android:layout_marginVertical="@dimen/d1"
                             android:layout_gravity="center"
-                            />
+                            android:background="@drawable/circleshape_bg"
+                            app:tint="@color/red"
+                            android:adjustViewBounds="true"
+                            android:layout_marginHorizontal="8dp"
+                            android:backgroundTint="@color/gray1"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1250,14 +1172,15 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:src="@drawable/zomato_wallet1_icon"
-                            android:background="@drawable/circleshape_bg"
-                            android:layout_marginHorizontal="@dimen/d2"
-                            android:layout_marginVertical="@dimen/d1"
                             android:layout_gravity="center"
-                            />
+                            android:background="@drawable/circleshape_bg"
+                            app:tint="@color/red"
+                            android:adjustViewBounds="true"
+                            android:layout_marginHorizontal="8dp"
+                            android:backgroundTint="@color/gray1"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1313,15 +1236,15 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:src="@drawable/error_icon"
-                            android:background="@drawable/circleshape_bg"
-                            android:layout_marginHorizontal="@dimen/d2"
-                            android:layout_marginVertical="@dimen/d1"
                             android:layout_gravity="center"
-                            android:tint="@color/red"
-                            />
+                            android:background="@drawable/circleshape_bg"
+                            app:tint="@color/red"
+                            android:adjustViewBounds="true"
+                            android:layout_marginHorizontal="8dp"
+                            android:backgroundTint="@color/gray1"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1356,14 +1279,15 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:src="@drawable/faces_icon"
-                            android:background="@drawable/circleshape_bg"
-                            android:layout_marginHorizontal="@dimen/d2"
-                            android:layout_marginVertical="@dimen/d1"
                             android:layout_gravity="center"
-                            />
+                            android:background="@drawable/circleshape_bg"
+                            app:tint="@color/red"
+                            android:adjustViewBounds="true"
+                            android:layout_marginHorizontal="8dp"
+                            android:backgroundTint="@color/gray1"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1397,14 +1321,15 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:src="@drawable/feeding_icon"
-                            android:background="@drawable/circleshape_bg"
-                            android:layout_marginHorizontal="@dimen/d2"
-                            android:layout_marginVertical="@dimen/d1"
                             android:layout_gravity="center"
-                            />
+                            android:background="@drawable/circleshape_bg"
+                            app:tint="@color/red"
+                            android:adjustViewBounds="true"
+                            android:layout_marginHorizontal="8dp"
+                            android:backgroundTint="@color/gray1"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1432,19 +1357,21 @@
                         android:background="@color/brown" />
 
                     <LinearLayout
+                        android:id="@+id/dininghelp1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:src="@drawable/error_icon"
-                            android:background="@drawable/circleshape_bg"
-                            android:layout_marginHorizontal="@dimen/d2"
-                            android:layout_marginVertical="@dimen/d1"
                             android:layout_gravity="center"
-                            app:tint="@color/red" />
+                            android:background="@drawable/circleshape_bg"
+                            app:tint="@color/red"
+                            android:adjustViewBounds="true"
+                            android:layout_marginHorizontal="8dp"
+                            android:backgroundTint="@color/gray1"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1477,14 +1404,15 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:src="@drawable/zomato_wallet1_icon"
-                            android:background="@drawable/circleshape_bg"
-                            android:layout_marginHorizontal="@dimen/d2"
-                            android:layout_marginVertical="@dimen/d1"
                             android:layout_gravity="center"
-                            />
+                            android:background="@drawable/circleshape_bg"
+                            app:tint="@color/red"
+                            android:adjustViewBounds="true"
+                            android:layout_marginHorizontal="8dp"
+                            android:backgroundTint="@color/gray1"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1518,14 +1446,15 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:src="@drawable/logout_icon"
-                            android:background="@drawable/circleshape_bg"
-                            android:layout_marginHorizontal="@dimen/d2"
-                            android:layout_marginVertical="@dimen/d1"
                             android:layout_gravity="center"
-                            />
+                            android:background="@drawable/circleshape_bg"
+                            app:tint="@color/red"
+                            android:adjustViewBounds="true"
+                            android:layout_marginHorizontal="8dp"
+                            android:backgroundTint="@color/gray1"/>
 
                         <TextView
                             android:layout_width="wrap_content"

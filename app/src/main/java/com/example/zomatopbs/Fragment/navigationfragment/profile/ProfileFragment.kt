@@ -37,6 +37,9 @@ class ProfileFragment : Fragment() {
         binding.likeBtn.setOnClickListener {
             findNavController().navigate(R.id.likesFragment)
         }
+        binding.favorateorders.setOnClickListener {
+            findNavController().navigate(R.id.likesFragment)
+        }
         binding.paymentBtn.setOnClickListener {
             findNavController().navigate(R.id.paymentMethodFragment)
 
@@ -45,6 +48,7 @@ class ProfileFragment : Fragment() {
             findNavController().navigate(R.id.settingsFragment)
 
         }
+
         binding.yourrating.setOnClickListener {
             findNavController().navigate(R.id.addReviewFragment)
 
@@ -80,6 +84,7 @@ class ProfileFragment : Fragment() {
         }
          binding.groceryOrderingHelp.setOnClickListener {
 //            findNavController().navigate(R.id.editionWalletFaqsFragment)
+             findNavController().navigate(R.id.supportMessengerFragment)
             Toast.makeText(requireContext(), "underdevelopment", Toast.LENGTH_SHORT).show()
         }
          binding.yourTransaction.setOnClickListener {
@@ -113,20 +118,44 @@ class ProfileFragment : Fragment() {
         }
          binding.logoutuser.setOnClickListener {
             LogOutFragment().show(requireFragmentManager(),MyConstant.tag)
-
             Toast.makeText(requireContext(), "underdevelopment", Toast.LENGTH_SHORT).show()
         }
 
         binding.Creditzomato.setOnClickListener {
 
             findNavController().navigate(R.id.zomatoCreditsFragment)
-
             Toast.makeText(requireContext(), "underdevelopment", Toast.LENGTH_SHORT).show()
         }
         binding.claimGiftCard.setOnClickListener {
-
             findNavController().navigate(R.id.claimGiftCardFragment)
-
+            Toast.makeText(requireContext(), "underdevelopment", Toast.LENGTH_SHORT).show()
+        }
+        binding.youreventticket.setOnClickListener {
+            findNavController().navigate(R.id.eventTicketFragment)
+            Toast.makeText(requireContext(), "underdevelopment", Toast.LENGTH_SHORT).show()
+        }
+        binding.frequentlyaskquestEvent.setOnClickListener {
+            findNavController().navigate(R.id.askQuestionFragment)
+            Toast.makeText(requireContext(), "underdevelopment", Toast.LENGTH_SHORT).show()
+        }
+        binding.eventhelp.setOnClickListener {
+            findNavController().navigate(R.id.supportMessengerFragment)
+            Toast.makeText(requireContext(), "underdevelopment", Toast.LENGTH_SHORT).show()
+        }
+        binding.dininghelp1.setOnClickListener {
+            findNavController().navigate(R.id.supportMessengerFragment)
+            Toast.makeText(requireContext(), "underdevelopment", Toast.LENGTH_SHORT).show()
+        }
+        binding.dininghelp1.setOnClickListener {
+            findNavController().navigate(R.id.supportMessengerFragment)
+            Toast.makeText(requireContext(), "underdevelopment", Toast.LENGTH_SHORT).show()
+        }
+        binding.tableReservationhelp.setOnClickListener {
+            findNavController().navigate(R.id.supportMessengerFragment)
+            Toast.makeText(requireContext(), "underdevelopment", Toast.LENGTH_SHORT).show()
+        }
+        binding.diningHelp12.setOnClickListener {
+            findNavController().navigate(R.id.supportMessengerFragment)
             Toast.makeText(requireContext(), "underdevelopment", Toast.LENGTH_SHORT).show()
         }
 

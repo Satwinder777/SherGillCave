@@ -49,6 +49,7 @@
                     android:text="Introducing "
                     android:textColor="@color/black"
                     android:layout_weight="1"
+                    android:fontFamily="@font/osc_bold1"
                     />
 
                 <TextView
@@ -60,8 +61,10 @@
                     android:text="Possibilitty Gold"
                     android:textSize="13sp"
                     android:layout_weight="1"
-
+                    android:drawableStart="@drawable/timer_ic"
+                    android:gravity="center_vertical"
                     android:textColor="@color/black"
+                    android:drawablePadding="2dp"
                     />
                 <TextView
 
@@ -70,9 +73,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="8dp"
                     android:text="You are invited1 "
-                    android:textColor="@color/black"
+                    android:textColor="@color/purple_700"
+                    android:gravity="center_vertical"
                     android:textSize="10sp"
                     android:layout_weight="1"
+                    android:drawablePadding="2dp"
 
                     tools:ignore="MissingConstraints" />
             </LinearLayout>
@@ -113,6 +118,7 @@
                     android:text="Introducing "
                     android:textColor="@color/black"
                     android:layout_weight="1"
+                    android:fontFamily="@font/osc_bold1"
 
                     />
 
@@ -124,18 +130,20 @@
                     android:text="Possibilitty Gold"
                     android:textSize="13sp"
                     android:layout_weight="1"
-
+                    android:drawableStart="@drawable/timer_ic"
+                    android:gravity="center_vertical"
                     android:textColor="@color/black"
                     />
+
                 <TextView
                     android:id="@+id/recomm_offer2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="8dp"
-                    android:text="You are invited1 "
-                    android:textColor="@color/black"
-                    android:textSize="10sp"
                     android:layout_weight="1"
+                    android:text="You are invited1 "
+                    android:textColor="@color/purple_700"
+                    android:textSize="10sp"
                     tools:ignore="MissingConstraints" />
             </LinearLayout>
         </LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/d8"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Can i cancel my tickets"
+        android:drawableEnd="@drawable/down_1ic"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/brown"
+        android:layout_marginTop="@dimen/d8"
+
+        />
+
+
+
+
+</LinearLayout>

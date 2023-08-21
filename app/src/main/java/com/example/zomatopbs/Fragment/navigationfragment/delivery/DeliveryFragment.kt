@@ -17,7 +17,7 @@ import com.example.zomatopbs.databinding.ActivityCountryCodePickerBinding
 import com.example.zomatopbs.databinding.FragmentDeliveryBinding
 import com.example.zomatopbs.objects.Allfun
 
-class DeliveryFragment : Fragment() ,RecommendedItemAdapter.onRecommendedItemClick{
+class DeliveryFragment : Fragment() ,RecommendedItemAdapter.onRecommendedItemClick,OfferItemAdapter.OnOfferItemClick{
     private lateinit var binding: FragmentDeliveryBinding
     lateinit var offerAdapter :OfferItemAdapter
     lateinit var recommendedAdapter :RecommendedItemAdapter
@@ -36,7 +36,7 @@ class DeliveryFragment : Fragment() ,RecommendedItemAdapter.onRecommendedItemCli
 
         offerrc = binding.offerrc
         val delivertIns = deliveryData.data
-        offerAdapter = OfferItemAdapter(delivertIns.initData(deliveryData.OfferModelCls1) as MutableList<OfferModelCls>)
+        offerAdapter = OfferItemAdapter(delivertIns.initData(deliveryData.OfferModelCls1) as MutableList<OfferModelCls>,this)
         offerrc.adapter = offerAdapter
 
 
@@ -84,6 +84,23 @@ class DeliveryFragment : Fragment() ,RecommendedItemAdapter.onRecommendedItemCli
         findNavController().navigate(R.id.previewDetailFragment)
     }
 
+    override fun onclickofferitem(position: Int) {
+        when(position){
+            0->{
+                findNavController().navigate(R.id.offersFragment)
+//                Allfun.UnderDevelopment(requireContext())
+            }
+            1->{
+                findNavController().navigate(R.id.gourmetFragment)
+            }
+            2->{
+                findNavController().navigate(R.id.gourmetFragment)
+
+            }
+            else->{ Allfun.UnderDevelopment(requireContext())}
+        }
+    }
+
 
 }
 enum class deliveryData{
@@ -94,7 +111,7 @@ companion object data{
     fun initData(deliveryData: deliveryData):MutableList<*> {
         return when(deliveryData){
             OfferModelCls1->{
-                val list = mutableListOf<OfferModelCls>( OfferModelCls(R.drawable.pizza1,"myPizza","the top Pizza"),OfferModelCls(R.drawable.pizza2,"myPizza","the top Pizza"),OfferModelCls(R.drawable.pizza1,"myPizza","the top Pizza"),OfferModelCls(R.drawable.pizza2,"myPizza","the top Pizza"))
+                val list = mutableListOf<OfferModelCls>( OfferModelCls(R.drawable.red_badge_icon,"Offers","Up to 60% OFF"),OfferModelCls(R.drawable.gourmet_icon,"Gourmet","Selections"),OfferModelCls(R.drawable.fruit_bucket_icon,"Healthy","Curated dishes"),OfferModelCls(R.drawable.pizza2,"myPizza","the top Pizza"))
                 return list
             }
             MyString1->{

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="100dp"
+    android:layout_gravity="center"
+    >
+
+    <ImageView
+        android:id="@+id/popular_image1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/pizza2"
+        android:scaleType="fitXY"
+
+        />
+</androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/popular_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sandwiches"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/popular_image2"
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/pizza1"
+            android:scaleType="fitXY"
+
+            />
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/popular_text2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sandwiches"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/pizza1"
+            android:scaleType="fitXY"
+
+            />
+    </androidx.cardview.widget.CardView>
+    <TextView
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sandwiches"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        />
+
+</LinearLayout>

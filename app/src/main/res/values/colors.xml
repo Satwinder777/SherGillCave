@@ -28,5 +28,8 @@
     <color name="brown">#C9C9C9</color>
     <color name="light_green">#7eb78c</color>
     <color name="my_bg_color">#f4f5fa</color>
+    <color name="sky_text_color">#0d99ff</color>
+    <color name="normal_carrd_bg">#94b387</color>
+    <color name="normal_black">#1c1c1c</color>
 
 </resources>
