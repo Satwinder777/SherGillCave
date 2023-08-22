@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- Define the radial gradient -->
+    <gradient
+        android:type="radial"
+        android:centerX="50%"
+    android:centerY="66%"
+    android:startColor="#D298AB"
+    android:endColor="#23FFFFFF"
+    android:gradientRadius="0%"
+    />
+</shape>

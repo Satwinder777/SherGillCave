@@ -9,6 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:cardCornerRadius="10dp"
+        android:layout_gravity="center"
         >
         <ImageView
             android:id="@+id/imageoffer"
@@ -21,18 +22,24 @@
     <TextView
         android:id="@+id/textoffer1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Taco Bell"
+        android:layout_height="match_parent"
         android:layout_marginVertical="3dp"
         android:fontFamily="@font/osc_medium"
         android:textColor="@color/black"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Taco Bell"
+
+
         />
     <TextView
         android:id="@+id/textoffer2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="40% OFF up to ..."
-        android:textColor="@color/sky_text_color"
-        />
 
+        android:textColor="@color/sky_text_color"
+        android:ellipsize="end"
+        android:singleLine="true"
+/>
 </LinearLayout>

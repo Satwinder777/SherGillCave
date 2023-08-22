@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/my_bg_color"
+    android:orientation="vertical">
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="124dp"
+        android:layout_height="162dp"
+        app:cardCornerRadius="10dp"
+        >
+        <ImageView
+            android:id="@+id/recoImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/pizza1"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/like_zomato_icon"
+            android:background="@drawable/normal_card_bg"
+            android:padding="4dp"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/d8"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+     <androidx.appcompat.widget.LinearLayoutCompat
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_marginTop="5dp"
+         >
+         <TextView
+             android:id="@+id/recotitle"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Prankster"
+             android:textColor="@color/black"
+             android:fontFamily="@font/osc_bold1"
+             android:layout_weight="1"
+             android:layout_gravity="center"
+
+             />
+         <TextView
+             android:id="@+id/recorating"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="3.4 ✮"
+             android:background="@drawable/normal_card_bg"
+             android:textColor="@color/white"
+             android:backgroundTint="@color/green"
+             android:textSize="10sp"
+             android:paddingVertical="2dp"
+             android:paddingHorizontal="4dp"
+             android:fontFamily="@font/osc_bold1"
+             android:layout_gravity="center"
+             />
+     </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/recoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12.6 kms sector 56"
+        android:textSize="10sp"
+        />
+
+</LinearLayout>

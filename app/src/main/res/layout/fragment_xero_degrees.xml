@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/my_bg_color"
+    android:padding="@dimen/d2"
+    tools:context=".Fragment.navigationfragment.dining.XeroDegreesFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="50dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_18sdp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/mybackbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_arrow_back_24"
+                android:layout_gravity="center"
+                android:background="@drawable/normal_card_bg"
+                android:padding="5dp"
+
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="enter your query"
+                android:drawableStart="@drawable/search_icon1"
+                android:drawablePadding="@dimen/d8"
+                android:background="@drawable/normal_card_bg"
+                android:paddingHorizontal="@dimen/d8"
+                android:paddingVertical="8dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="@dimen/d8"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/more_horizontal"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_bg"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Xero Degrees"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/osc_medium"
+                    android:layout_marginVertical="@dimen/d8"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cafe, Pizza, Burger"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sector 70, Chandigarh"
+                    />
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                android:layout_gravity="center"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="vertical"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="3.4"
+                        android:background="@color/green"
+                        android:gravity="center"
+                        android:paddingHorizontal="@dimen/d8"
+                        android:drawablePadding="5dp"
+                        android:textSize="16sp"
+                        android:drawableEnd="@drawable/star_filled_icon"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textSize="10sp"
+                        android:text="17.9k\nReviews"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/d8"
+
+            android:orientation="horizontal">
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="Open now 11 am - 11pm"/>-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/stroke_brown"
+                android:paddingHorizontal="@dimen/d8"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableEnd="@drawable/vertical_line"
+                    android:text="Open now"
+                    android:drawableTint="@color/brown"
+                    android:drawablePadding="@dimen/d8"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableEnd="@drawable/down_1ic"
+                    android:text="11 am - 11pm"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:text="$1,100 for two"
+                android:layout_gravity="center"
+
+                tools:ignore="RtlCompat" />
+
+        </LinearLayout>
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:scrollbars="none">
+
+            <!-- Place your horizontally scrollable content here -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/d8"
+                android:orientation="horizontal">
+
+                <!-- Add child views that you want to scroll horizontally -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/stroke_brown"
+                    android:padding="5dp"
+                    android:layout_margin="3dp"
+                    android:drawableStart="@drawable/calling_icon"
+                    android:gravity="center"
+                    android:drawablePadding="@dimen/d8"
+                    android:textColor="@color/black"
+
+                    android:text="Contact" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/stroke_brown"
+                    android:padding="5dp"
+                    android:layout_margin="3dp"
+                    android:drawableStart="@drawable/direction_icon"
+                    android:gravity="center"
+                    android:drawablePadding="@dimen/d8"
+                    android:textColor="@color/black"
+
+                    android:text="Directions" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/stroke_brown"
+                    android:padding="5dp"
+                    android:layout_margin="3dp"
+                    android:drawableStart="@drawable/share_icon"
+                    android:gravity="center"
+                    android:drawablePadding="@dimen/d8"
+                    android:textColor="@color/black"
+
+                    android:text="Share" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/stroke_brown"
+                    android:padding="5dp"
+                    android:layout_margin="3dp"
+                    android:drawableStart="@drawable/like_comment_icon"
+                    android:gravity="center"
+                    android:drawablePadding="@dimen/d8"
+                    android:textColor="@color/black"
+
+                    android:text="Like" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/stroke_brown"
+                    android:padding="5dp"
+                    android:layout_margin="3dp"
+                    android:drawableStart="@drawable/call_icon"
+                    android:gravity="center"
+                    android:drawablePadding="@dimen/d8"
+                    android:textColor="@color/black"
+                    android:text="Favorates" />
+
+
+
+                <!-- Add more items as needed -->
+
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="CHECK OUT THE VIBE"
+    android:textSize="16sp"
+    android:fontFamily="@font/osc_bold1"
+    android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="122dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="16dp"
+                android:layout_margin="5dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/vibe1"
+                    android:scaleType="fitXY"
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="122dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="16dp"
+                android:layout_margin="5dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/vibe2"
+                    android:scaleType="fitXY"
+
+                    />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="122dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="16dp"
+                android:layout_margin="5dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/vibe3"
+                    android:scaleType="fitXY"
+
+                    />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Offers"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
+                android:text="Photos"
+                android:layout_weight="1"
+                android:textAlignment="center"
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
+                android:text="Reviews"
+                android:layout_weight="1"
+                android:textAlignment="center"
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
+                android:text="Menu"
+                android:layout_weight="1"
+                android:textAlignment="center"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
+                android:text="About"
+                android:layout_weight="1"
+                android:textAlignment="center"
+
+
+                />
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/brown"/>
+        <View
+            android:layout_width="50dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="-2dp"
+            android:background="@color/orange"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginVertical="23dp"
+
+            android:background="@drawable/stroke_yellow_bg_black"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OFFERS FOR THIS WEEK"
+                android:textColor="@color/white"
+                android:drawableBottom="@drawable/horizontal_line_black"
+                android:drawableTint="@color/white"
+                android:drawablePadding="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 offers available for you"
+                android:textColor="@color/white"
+                android:fontFamily="@font/osc_bold1"
+                android:layout_marginTop="5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_18sdp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/stroke_yellow_bg_black"
+                    android:padding="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/king_icon"
+                        android:layout_gravity="center"
+                        app:tint="@color/white"
+                        android:scaleType="fitXY"
+                        android:layout_marginStart="8dp"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GOLD OFFERS \n10% OFF\non bill payments"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:layout_marginStart="12dp"
+                        />
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/add_icon"
+                    android:background="@drawable/normal_card_bg"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="-3dp"
+                    android:elevation="@dimen/d8"
+
+                    />
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/stroke_yellow_bg_black"
+                    android:padding="8dp"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="-3dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/king_icon"
+                        android:layout_gravity="center"
+                        app:tint="@color/white"
+                        android:scaleType="fitXY"
+                        android:layout_marginStart="8dp"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GOLD OFFERS \n10% OFF\non bill payments"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:layout_marginStart="12dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/my_chip_bg"
+    android:padding="@dimen/d8"
+    android:layout_marginVertical="@dimen/d8"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:src="@drawable/pizza1"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chat with us"
+        android:gravity="center"
+        android:drawableTint="@color/red"
+        android:textColor="@color/red"
+        android:drawableEnd="@drawable/next1"
+        android:layout_gravity="center"
+        />
+
+
+
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/d8"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Photos"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:fontFamily="@font/osc_bold1"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See All"
+                android:textColor="@color/red"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:fontFamily="@font/osc_bold1"
+
+                />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/photosRc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/photots_rc_item"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reviews"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:fontFamily="@font/osc_bold1"
+                android:textSize="16sp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See All"
+                android:textColor="@color/red"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:fontFamily="@font/osc_bold1"
+
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HIGHLIGHTS"
+            android:textColor="@color/grey"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="Excellent Food and service"-->
+<!--                android:background="@drawable/my_chip_bg"-->
+<!--                android:textAlignment="center"-->
+<!--                android:layout_marginHorizontal="5dp"-->
+<!--                android:paddingVertical="3dp"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="3"-->
+<!--                android:text="Cheap and Affortable"-->
+<!--                android:background="@drawable/my_chip_bg"-->
+<!--                android:textAlignment="center"-->
+<!--                android:layout_marginHorizontal="5dp"-->
+<!--                android:paddingVertical="3dp"-->
+
+<!--                />
+-->
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Excellent Food and service"
+                android:backgroundTint="@color/white"
+                android:layout_weight="1"
+                android:layout_margin="5dp"/>
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cheap and Affortable"
+                android:backgroundTint="@color/white"
+                android:layout_margin="5dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CUSTOMER REVIEWS"
+            android:textColor="@color/grey"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/customerReview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/customer_review_rc_item"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="See all reviews (114)"
+            android:padding="@dimen/_18sdp"
+            android:textAlignment="center"
+            android:background="@drawable/stroke_brown"
+            android:backgroundTint="@color/white"
+            android:layout_marginVertical="@dimen/d8"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu"
+            android:textColor="@color/black"
+            android:fontFamily="@font/osc_bold1"
+            android:layout_weight="1"
+            android:layout_marginVertical="@dimen/d8"
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/burger_menu"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu"
+                android:layout_gravity="center"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14 pages"
+                android:layout_gravity="center"
+
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About the Restaurants"
+            android:textColor="@color/black"
+            android:fontFamily="@font/osc_bold1"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_marginVertical="@dimen/d8"
+            />
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:paddingTop="20dp"
+             android:paddingHorizontal="20dp"
+             android:background="@drawable/stroke_brown"
+             >
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="$ 1100 for two"
+                 android:drawableStart="@drawable/coins_icon"
+                 android:drawablePadding="@dimen/d8"
+
+                 />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="serves cafe, Pizza, Burger, Sandwich,....more"
+                 android:drawableStart="@drawable/serve_repo"
+                 android:drawablePadding="@dimen/d8"
+                 android:layout_marginVertical="@dimen/d8"
+
+                 />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Sco 45354,1st floor, sector 54, chandigarh "
+                 android:drawableStart="@drawable/baseline_location_on_24"
+                 android:drawablePadding="@dimen/d8"
+                 android:layout_marginBottom="@dimen/d8"
+                 android:drawableTint="@color/red"
+
+                 />
+             <LinearLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_gravity="center">
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textAlignment="center"
+                     android:layout_weight="1"
+                     android:layout_gravity="center"
+                     android:text="Get directions"/>
+                 <View
+                     android:layout_width="1dp"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/vertical_line"
+                     android:paddingHorizontal="@dimen/d8"
+                     android:backgroundTint="@color/brown"
+                     android:layout_marginHorizontal="@dimen/d8"
+                     />
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textAlignment="center"
+                     android:layout_weight="1"
+                     android:layout_gravity="center"
+
+                     android:text="Call restaurant"/>
+             </LinearLayout>
+         </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FACILITIES"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:layout_marginVertical="@dimen/_18sdp"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Home Delivery"
+                    android:drawablePadding="@dimen/d8"
+                    android:drawableStart="@drawable/green_check"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Takeaway available"
+                    android:drawablePadding="@dimen/d8"
+                    android:drawableStart="@drawable/green_check"
+                    android:layout_marginStart="@dimen/d8"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Deserts And Bakes"
+                    android:drawablePadding="@dimen/d8"
+                    android:drawableStart="@drawable/green_check"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.8"
+                    android:text="Indore Seating"
+                    android:drawablePadding="@dimen/d8"
+                    android:drawableStart="@drawable/green_check"
+                    android:layout_marginStart="@dimen/d8"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:background="@drawable/red_stroke_bg"
+         android:padding="@dimen/d8"
+         android:layout_marginVertical="18dp"
+
+         >
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/bike_icon"
+             app:tint="@color/red"
+             android:layout_gravity="center"
+             android:padding="@dimen/d8"
+
+             />
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Looking for food delivery ?\nView delivery menu"
+             android:layout_gravity="center"
+             android:layout_weight="1"
+             android:layout_marginHorizontal="@dimen/d8"
+             />
+
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/next1_icon"
+             android:layout_gravity="center"
+             android:background="@drawable/my_chip_bg"
+             android:paddingHorizontal="@dimen/d8"
+             app:tint="@color/white"
+             android:backgroundTint="@color/red"
+
+             />
+     </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More dining recommendations"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginVertical="@dimen/d8"
+            android:textSize="16sp"
+
+
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recomendationsRc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/recommedation_rc_item"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pay bill\n15% OFF with Gold"
+            android:backgroundTint="@color/red"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="10dp"
+            android:layout_marginVertical="@dimen/d8"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+</androidx.core.widget.NestedScrollView>

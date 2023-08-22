@@ -199,6 +199,11 @@
         android:name="com.example.zomatopbs.Fragment.navigationfragment.delivery.GourmetFragment"
         android:label="fragment_gourmet"
         tools:layout="@layout/fragment_gourmet" />
+    <fragment
+        android:id="@+id/xeroDegreesFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.dining.XeroDegreesFragment"
+        android:label="fragment_xero_degrees"
+        tools:layout="@layout/fragment_xero_degrees" />
 
 </navigation>
 

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingVertical="@dimen/d8"
+
+    android:paddingEnd="@dimen/d8"
+
+    tools:ignore="RtlSymmetry">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginStart="12dp"
+        app:cardCornerRadius="16dp"
+
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/pizza2"
+            android:scaleType="fitXY"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/like_zomato_icon"
+            android:padding="@dimen/d8"
+            android:background="@drawable/normal_card_bg"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/_18sdp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/d8"
+            android:layout_marginTop="150dp"
+            android:paddingBottom="20dp"
+            android:background="@color/my_bg_color"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_chip_bg"
+                android:paddingHorizontal="@dimen/d8"
+                android:paddingVertical="4dp"
+                android:text="Up to 100% cashback + Bank offers | extra 10% Off"
+                android:textColor="@color/sky_text_color"
+                android:layout_marginVertical="8dp"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IL Forno Magico"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/osc_bold1"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3.4 "
+                    android:drawableEnd="@drawable/star_filled_icon"
+                    android:background="@drawable/normal_card_bg"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:gravity="center_vertical"
+                    android:drawableTint="@color/white"
+
+                    android:backgroundTint="@color/green"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cafe, Contiential, Chinese"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/osc_medium"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$110 for two"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/osc_medium"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phase 3B2 Market, Phase 1, Mohali"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/osc_medium"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2.2 Km"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/osc_medium"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+   <FrameLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="7dp"
+       android:elevation="100dp"
+       android:layout_marginTop="100dp"
+       >
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/stroke_yellow_bg_black"
+           android:paddingVertical="4dp"
+           android:paddingHorizontal="@dimen/d8"
+           android:gravity="center"
+           >
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/king_icon"
+               android:layout_gravity="center"
+               android:layout_marginHorizontal="@dimen/d8"
+               android:tint="@color/white"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="TRYNEW DISCOUNT\n30% FLAT OFF"
+               android:textColor="@color/white"
+               android:fontFamily="@font/osc_bold1"
+               android:textSize="10sp"
+
+
+
+               />
+       </LinearLayout>
+   </FrameLayout>
+</FrameLayout>

@@ -36,13 +36,13 @@ class GourmetAdapter(val list: MutableList<popularItem>):RecyclerView.Adapter<Go
     class GaoumetCls(view: View):RecyclerView.ViewHolder(view) {
         //        val sortxt = view.findViewById<TextView>(R.id.myText)
         val offer_item1 = view.findViewById<ImageView>(R.id.popular_image1)
-        val offer_item2 = view.findViewById<ImageView>(R.id.popular_image2)
-//        val offer_item2 = view.findViewById<ImageView>(R.id.recomm_img2)
-
-        val offer_item_title1 = view.findViewById<TextView>(R.id.popular_text1)
-//        val offer_item_title2 = view.findViewById<TextView>(R.id.recomm_title2)
-
-        val recomm_offer_txt1 = view.findViewById<TextView>(R.id.popular_text2)
+//        val offer_item2 = view.findViewById<ImageView>(R.id.popular_image2)
+////        val offer_item2 = view.findViewById<ImageView>(R.id.recomm_img2)
+//
+//        val offer_item_title1 = view.findViewById<TextView>(R.id.popular_text1)
+////        val offer_item_title2 = view.findViewById<TextView>(R.id.recomm_title2)
+//
+//        val recomm_offer_txt1 = view.findViewById<TextView>(R.id.popular_text2)
 //        val recomm_offer_txt2 = view.findViewById<TextView>(R.id.recomm_offer2)
 
 //        val recomm_time1 = view.findViewById<TextView>(R.id.recomm_time1)
@@ -53,13 +53,13 @@ class GourmetAdapter(val list: MutableList<popularItem>):RecyclerView.Adapter<Go
         fun bind(item:popularItem){
 
             item.image1?.let { offer_item1.setImageResource(it) }
-            item.image2?.let { offer_item2.setImageResource(it) }
+//            item.image2?.let { offer_item2.setImageResource(it) }
 //            offer_item2.setImageResource(item.img2)
 
-            offer_item_title1.text = item.text1
-//            offer_item_title2.text = item.recomm_title2
-
-            recomm_offer_txt1.text = item.text2
+//            offer_item_title1.text = item.text1
+////            offer_item_title2.text = item.recomm_title2
+//
+//            recomm_offer_txt1.text = item.text2
 //            recomm_offer_txt2.text = item.recomm_offer2
 
 //            recomm_time1.text = item.recomm_text

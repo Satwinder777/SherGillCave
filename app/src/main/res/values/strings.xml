@@ -30,5 +30,6 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
     <string name="place">Sector 67, Mohali</string>
     <string name="feeding_reciept_text">If you\'re referring to the terms and conditions, legal disclaimers, or any other specific text that appears in Zomato\'s bottom sheet, I recommend checking directly within the Zomato app or contacting their customer support for accurate information. If you have a specific idea of what you want to convey in that section of the bottom sheet, you could create a custom message that outlines the purpose of collecting PAN details, any legal requirements, and how the information will be used. However, it\'s essential to ensure that the text complies with legal regulations and accurately represents the terms and conditions of PAN collection and usage.</string>
     <string name="report_and_incident">Please use this form only for accident or abuse related emergency situations. For order or other general queries contact us here  <font fgcolor='#FF3700B3'>contact us here</font></string>
+    <string name="company_place">Possibility Solutions, c-127,4th floor</string>
 
 </resources>

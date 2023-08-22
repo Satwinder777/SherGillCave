@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="105dp"
+        android:layout_height="142dp"
+        app:cardCornerRadius="@dimen/d8"
+        >
+        <ImageView
+            android:id="@+id/photoimg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/pizza1"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/photostittletext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ambience"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/photorelatedtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11 Photos"
+        android:layout_gravity="center"
+        />
+
+
+</LinearLayout>
