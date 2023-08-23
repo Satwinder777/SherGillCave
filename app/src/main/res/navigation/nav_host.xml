@@ -204,6 +204,21 @@
         android:name="com.example.zomatopbs.Fragment.navigationfragment.dining.XeroDegreesFragment"
         android:label="fragment_xero_degrees"
         tools:layout="@layout/fragment_xero_degrees" />
+    <fragment
+        android:id="@+id/photosFragment1"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.dining.PhotosFragment"
+        android:label="fragment_photos"
+        tools:layout="@layout/fragment_photos" />
+    <fragment
+        android:id="@+id/payBillsXerosFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.dining.PayBillsXerosFragment"
+        android:label="fragment_pay_bills_xeros"
+        tools:layout="@layout/fragment_pay_bills_xeros" />
+    <fragment
+        android:id="@+id/billDetailsXeroFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.dining.BillDetailsXeroFragment"
+        android:label="fragment_bill_details_xero"
+        tools:layout="@layout/fragment_bill_details_xero" />
 
 </navigation>
 

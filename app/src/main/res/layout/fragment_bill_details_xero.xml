@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/my_bg_color"
+    tools:context=".Fragment.navigationfragment.dining.BillDetailsXeroFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/onback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_arrow_back_24"
+                    android:background="@drawable/normal_card_bg"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Xero Degrees"
+                        android:textColor="@color/black"
+                        android:textSize="23sp"
+                        android:fontFamily="@font/osc_medium"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sector 35, Chandigarh"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/osc_medium"
+
+
+                        />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/comment_icon"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/d8"
+                    />
+            </LinearLayout>
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="you,re saving $30 on this bill"
+                android:layout_marginVertical="25dp"
+                android:background="@drawable/my_chip_bg"
+                android:paddingVertical="5dp"
+                app:chipIcon="@drawable/percent_card_star_shaped_"
+                app:chipIconTint="@color/sky_text_color"
+                app:iconStartPadding="@dimen/d8"
+                android:layout_gravity="center"
+                android:textColor="@color/sky_text_color"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/editAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$"
+                    android:textColor="@color/brown"
+                    android:gravity="end"
+                    android:textSize="24sp"
+                    android:drawableEnd="@drawable/vertical_line"
+                    android:drawablePadding="@dimen/d8"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="200"
+                    android:textColor="@color/black"
+                    android:gravity="end"
+                    android:textSize="24sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_gravity="center"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/edit_icon"
+                    android:layout_marginStart="@dimen/d8"
+                    android:layout_marginTop="-10dp"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:background="@color/brown"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/d8"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/brown"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/d8"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/d8"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To be paid"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$ 419"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:gravity="end"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/brown"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/d8"
+                android:layout_marginBottom="20dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/d8"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bill amount"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$ 219"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:gravity="end"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/d8"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15% OFF with Zomato Gold"
+                    android:layout_weight="1"
+                    android:textColor="@color/sky_text_color"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- $ 19"
+                    android:layout_weight="1"
+                    android:textColor="@color/sky_text_color"
+                    android:gravity="end"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/d8"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3-month Possibility Gold Membership "
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$ 209"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:gravity="end"
+
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/brown"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="30dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/king_icon"
+                        android:layout_gravity="center"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/circle_bg"
+                        android:backgroundTint="@color/yellow"
+
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gold membership\nadded!"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="For 3 months at $245. You are now getting 15% OFF on this bill"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+
+                            />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/king_icon"
+                        android:layout_gravity="center"
+                        android:layout_margin="6dp"
+                        android:text="remove"
+                        android:textAllCaps="true"
+                        android:background="@drawable/red_stroke_bg"
+                        android:padding="5dp"
+                        android:drawableEnd="@drawable/cross_small_9"
+                        android:gravity="center"
+                        android:drawablePadding="5dp"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upto 40% OFF on dining"
+                android:drawableStart="@drawable/percent_card_star_shaped_"
+                android:textColor="@color/black"
+                android:drawablePadding="@dimen/d8"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Free delivery and extra offers while ordering"
+                android:textColor="@color/black"
+                android:drawablePadding="@dimen/d8"
+                android:layout_marginVertical="5dp"
+                app:drawableStartCompat="@drawable/bike_icon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upto 40% OFF on dining"
+                android:drawableStart="@drawable/king_icon"
+                android:textColor="@color/black"
+                android:drawablePadding="@dimen/d8"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/brown"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="20dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Donate a meal via feeding India"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+
+                      />
+                <View
+                    android:layout_width="200dp"
+                    android:layout_height="3dp"
+                    android:background="@drawable/dashed_line"
+                    android:layout_marginTop="@dimen/d8"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feeds 1 meal to someone in need for $10"
+                    android:textColor="@color/brown"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:textColor="@color/red"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:gravity="end|top"
+
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/brown"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Use bank offers / Coupons"
+                android:drawableStart="@drawable/percent_card_star_shaped_"
+                android:drawableTint="@color/sky_text_color"
+                android:drawablePadding="@dimen/d8"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="satta"
+                android:gravity="end"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/brown"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp"
+            android:layout_marginVertical="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PAY USING\nPersonal\n***649"
+                android:drawableStart="@drawable/mastercard_icon"
+                android:drawablePadding="@dimen/d8"
+                android:layout_weight="1"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/down_1ic"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                />
+
+            <LinearLayout
+                android:id="@+id/payBillxerosecond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/red_stroke_bg"
+                android:backgroundTint="@color/red"
+                android:padding="@dimen/d8"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$417\nTOTAL"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pay Bill"
+                    android:layout_gravity="center"
+                    android:drawableEnd="@drawable/next_icon"
+                    android:textColor="@color/white"
+                    android:drawableTint="@color/white"
+                    android:layout_weight="1"
+                    android:gravity="end|center_vertical"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

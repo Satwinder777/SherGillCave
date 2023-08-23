@@ -27,6 +27,8 @@
         android:layout_height="wrap_content"
         android:text="Ambience"
         android:layout_gravity="center"
+        android:textColor="@color/black"
+
         />
     <TextView
         android:id="@+id/photorelatedtext"
