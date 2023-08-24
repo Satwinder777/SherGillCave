@@ -219,6 +219,26 @@
         android:name="com.example.zomatopbs.Fragment.navigationfragment.dining.BillDetailsXeroFragment"
         android:label="fragment_bill_details_xero"
         tools:layout="@layout/fragment_bill_details_xero" />
+    <fragment
+        android:id="@+id/cvvVerificationFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.dining.CvvVerificationFragment"
+        android:label="fragment_cvv_verification"
+        tools:layout="@layout/fragment_cvv_verification" />
+    <dialog
+        android:id="@+id/failedPaymentBottomSheetFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.dining.FailedPaymentBottomSheetFragment"
+        android:label="fragment_failed_payment_bottom_sheet"
+        tools:layout="@layout/fragment_failed_payment_bottom_sheet" />
+    <fragment
+        android:id="@+id/paymentSuccessFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.dining.PaymentSuccessFragment"
+        android:label="fragment_payment_success"
+        tools:layout="@layout/fragment_payment_success" />
+    <dialog
+        android:id="@+id/filterFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.dining.FilterFragment"
+        android:label="fragment_filter"
+        tools:layout="@layout/fragment_filter" />
 
 </navigation>
 

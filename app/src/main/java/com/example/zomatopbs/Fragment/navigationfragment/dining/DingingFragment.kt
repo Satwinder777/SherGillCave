@@ -15,6 +15,7 @@ import com.example.zomatopbs.Fragment.navigationfragment.dining.adapter.LovedRes
 import com.example.zomatopbs.Fragment.navigationfragment.dining.adapter.popularItem1
 import com.example.zomatopbs.R
 import com.example.zomatopbs.databinding.FragmentDingingBinding
+import com.example.zomatopbs.objects.MyConstant
 
 class DingingFragment : Fragment(), LovedRestaurantAdapter.OnLovedItemClick {
     private lateinit var binding : FragmentDingingBinding
@@ -57,9 +58,16 @@ class DingingFragment : Fragment(), LovedRestaurantAdapter.OnLovedItemClick {
 //            bottomSheetFragment.show(requireFragmentManager(), bottomSheetFragment.tag)
         }
         binding.sortSheet.setOnClickListener {
-            val sort = SortBSheetFragment()
+            try {
+                val sort = FilterFragment()
+//
+//                sort.show(requireActivity().supportFragmentManager,MyConstant.tag)
+                findNavController().navigate(R.id.filterFragment)
+            }
+            catch (e:Exception){
+                Log.e("sattatest", "onViewCreated: ${e.message}", )
+            }
 
-            sort.show(requireFragmentManager(),"sortDailog")
         }
 
     }

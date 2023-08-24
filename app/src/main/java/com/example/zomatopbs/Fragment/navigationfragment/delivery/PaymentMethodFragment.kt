@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.zomatopbs.R
 import com.example.zomatopbs.databinding.FragmentPaymentMethodBinding
 
@@ -25,6 +26,9 @@ class PaymentMethodFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.backBtn.setOnClickListener {
             requireActivity().onBackPressed()
+        }
+        binding.recomendedcard.setOnClickListener {
+           findNavController().navigate(R.id.cvvVerificationFragment)
         }
     }
 

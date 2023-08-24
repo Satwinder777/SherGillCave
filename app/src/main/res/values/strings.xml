@@ -32,5 +32,11 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
     <string name="report_and_incident">Please use this form only for accident or abuse related emergency situations. For order or other general queries contact us here  <font fgcolor='#FF3700B3'>contact us here</font></string>
     <string name="company_place">Possibility Solutions, c-127,4th floor</string>
     <string name="looking_delivery"><font fgcolor='#000000'>Looking for food delivery ?</font>\nView delivery menu</string>
+    <string name="cvv"><u>What is CVV?</u></string>
+
+    <string-array name="stringArray">
+        <item>2</item>
+        <item>5</item>
+    </string-array>
 
 </resources>

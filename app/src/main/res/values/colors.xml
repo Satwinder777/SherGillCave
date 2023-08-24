@@ -31,5 +31,6 @@
     <color name="sky_text_color">#0d99ff</color>
     <color name="normal_carrd_bg">#94b387</color>
     <color name="normal_black">#1c1c1c</color>
+    <color name="light_pink">#FE7E8B</color>
 
 </resources>
