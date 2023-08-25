@@ -33,6 +33,9 @@ class OffersFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         sliderImageSet()
+        binding.onback.setOnClickListener {
+            requireActivity().onBackPressed()
+        }
 //        val imageList = ArrayList<SlideModel>() // Create image list
 //
 //// imageList.add(SlideModel("String Url" or R.drawable)

@@ -4,34 +4,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/borderColor"
+    android:padding="@dimen/p20"
     tools:context=".Fragment.navigationfragment.delivery.FoodDetailsFragment">
 
 
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="match_parent"
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableStart="@drawable/baseline_arrow_back_24"
-        android:gravity="center_vertical"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:background="@drawable/normal_card_bg"
+        android:padding="5dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="La Pinno,z Pizza"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/_18sdp"
         android:textColor="@color/black"
-        android:fontFamily="@font/osc_medium"
-        android:drawablePadding="5dp"
-        android:background="@color/white"
-        android:padding="10dp"
-        android:text="Captain Sam's" />
+        android:fontFamily="@font/osc_bold1"
+        android:layout_marginTop="6dp"
+        />
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingVertical="40dp"
+        android:paddingVertical="45dp"
         android:layout_gravity="clip_horizontal"
         android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="5000dp"
-            android:layout_marginHorizontal="8dp"
+            android:layout_marginHorizontal="@dimen/p10"
 
             android:orientation="vertical" >
 
@@ -40,8 +45,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/delivery_in_25_30_min"
                 android:gravity="center_vertical"
-                android:background="@drawable/normal_card_bg"
-                android:padding="8dp"
+                android:background="@drawable/my_chip_bg"
+                android:padding="@dimen/p10"
                 android:layout_marginTop="19dp"
                 android:drawableStart="@drawable/timer_ic"/>
 
@@ -59,183 +64,530 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingHorizontal="7dp"
-                android:background="@drawable/normal_card_bg"
-                >
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/vegetarian_sign_icon"
-                    android:layout_gravity="center_vertical"
-                    />
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginHorizontal="5dp"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Punjab Express Pizza (12 inch)"
-                        android:textColor="@color/black"
-                        android:fontFamily="@font/osc_medium"
-                        android:textStyle="bold"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/black"
-                        android:fontFamily="@font/osc_medium"
-                        android:layout_marginTop="@dimen/d8"
-                        android:text="₹100"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_weight="1"
-                    android:gravity="end"
-                    android:paddingVertical="5dp"
-                    >
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="1"
-                        android:drawableStart="@drawable/subtract_minus_icon"
-                        android:drawableEnd="@drawable/add_icon"
-                        android:background="@drawable/red_stroke_bg"
-                        android:paddingHorizontal="5dp"
-                        android:paddingVertical="3dp"
-                        android:drawableTint="@color/light_red"
-                        android:textColor="@color/black"
-                        android:textStyle="bold"
-
-
-                        android:drawablePadding="5dp"
-                        android:gravity="center"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/_100_150"
-                        android:textSize="12sp"
-                        android:layout_marginTop="@dimen/d8"
-
-                        />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="18dp"
-                android:background="@drawable/normal_card_bg"
-                android:padding="8dp"
+                android:background="@drawable/stroke_brown"
+                android:padding="5dp"
                 >
-
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Add more items"
-                    android:drawableStart="@drawable/add_circle_icon"
-                    android:drawableEnd="@drawable/next_icon"
-                    android:drawablePadding="5dp"
-                    android:textColor="@color/black"
-                    android:gravity="center_vertical"
-                    android:layout_marginVertical="8dp"/>
-                <View
-                    android:layout_width="wrap_content"
-                    android:layout_height="2dp"
-                    android:background="@drawable/dashed_line"
-                    android:layout_marginVertical="8dp"/>
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="7dp"
+                    android:background="@drawable/my_chip_bg"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/vegetarian_sign_icon"
+                        android:layout_gravity="center_vertical"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Punjab Express Pizza (12 inch)"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/osc_medium"
+                            android:textStyle="bold"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/osc_medium"
+                            android:layout_marginTop="@dimen/d8"
+                            android:text="₹100"/>
 
-                <TextView
-                    android:layout_width="match_parent"
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:paddingVertical="5dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:drawableStart="@drawable/subtract_minus_icon"
+                            android:drawableEnd="@drawable/add_icon"
+                            android:background="@drawable/red_stroke_bg"
+                            android:paddingHorizontal="5dp"
+                            android:paddingVertical="3dp"
+                            android:drawableTint="@color/light_red"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+
+
+                            android:drawablePadding="5dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_100_150"
+                            android:textSize="12sp"
+                            android:layout_marginTop="@dimen/d8"
+
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_marginVertical="@dimen/p8"
+                 >
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="1dp"
+                     android:background="@color/brown"
+                     android:layout_gravity="center"
+                     android:layout_weight="1"
+                     />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="complete your meal with"
+                     android:layout_weight="1"
+                     android:textAlignment="center"
+                     android:paddingHorizontal="@dimen/p8"
+                     android:textColor="@color/black"
+
+                     />
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="1dp"
+                     android:background="@color/brown"
+                     android:layout_gravity="center"
+                     android:layout_weight="1"
+
+                     />
+
+             </LinearLayout>
+                
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="139dp"
                     android:layout_height="wrap_content"
-                    android:text="Add more items"
-                    android:drawableStart="@drawable/edit_note_icon"
-                    android:drawableEnd="@drawable/next_icon"
-                    android:drawablePadding="5dp"
-                    android:textColor="@color/black"
-                    android:gravity="center_vertical"
-                    android:layout_marginVertical="8dp"/>
+                    android:background="@color/white"
+                    android:layout_margin="5dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
 
+                        android:orientation="vertical">
+                        
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="90dp"-->
+<!--                            android:src="@drawable/pizza1"-->
+<!--                            android:background="@drawable/bottomsheet_bg"-->
+<!--                            android:backgroundTint="@color/red"-->
+<!--                            >-->
+<!--                            <ImageView-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:src="@drawable/pizza1"-->
+<!--                                />-->
+<!--                        </RelativeLayout>-->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            app:cardCornerRadius="@dimen/p8"
+                            >
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/pizza1"
+                                android:scaleType="fitXY"
+                                />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="Cheese Dip"
+                            android:textSize="10sp"
+                            android:layout_marginStart="@dimen/p8"
+                            android:layout_marginVertical="@dimen/p8"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/p8"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"
+                                android:text="rupee 30"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"
+                                android:gravity="end"
+                                android:background="@drawable/red_stroke_bg"
+                                android:padding="4dp"
+
+                                android:text="rupee 30"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="139dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:layout_margin="5dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+
+                            android:orientation="vertical">
+
+                            <!--                        <RelativeLayout-->
+                            <!--                            android:layout_width="match_parent"-->
+                            <!--                            android:layout_height="90dp"-->
+                            <!--                            android:src="@drawable/pizza1"-->
+                            <!--                            android:background="@drawable/bottomsheet_bg"-->
+                            <!--                            android:backgroundTint="@color/red"-->
+                            <!--                            >-->
+                            <!--                            <ImageView-->
+                            <!--                                android:layout_width="match_parent"-->
+                            <!--                                android:layout_height="match_parent"-->
+                            <!--                                android:src="@drawable/pizza1"-->
+                            <!--                                />-->
+                            <!--                        </RelativeLayout>-->
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp"
+                                app:cardCornerRadius="@dimen/p8"
+                                >
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/pizza1"
+                                    android:scaleType="fitXY"
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:text="Cheese Dip"
+                                android:textSize="10sp"
+                                android:layout_marginStart="@dimen/p8"
+                                android:layout_marginVertical="@dimen/p8"
+                                />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/p8"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp"
+                                    android:text="rupee 30"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp"
+                                    android:gravity="end"
+                                    android:background="@drawable/red_stroke_bg"
+                                    android:padding="4dp"
+
+                                    android:text="rupee 30"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="saving corner"
-                android:textAlignment="center"
-                android:layout_marginVertical="20dp"
-                android:fontFamily="@font/osc_medium"
+                android:text="Add more items"
+                android:drawableStart="@drawable/comment_icon"
+                android:drawableEnd="@drawable/next_icon"
+                android:drawablePadding="5dp"
                 android:textColor="@color/black"
-                android:textAllCaps="true"/>
+                android:gravity="center_vertical"
+                android:layout_marginVertical="8dp"
+                android:background="@drawable/my_chip_bg"
+                android:padding="@dimen/p8"
+                android:backgroundTint="@color/my_bg_color"
+
+                />
+
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableStart="@drawable/like_filled_icon"
+                android:text="Add cooking instructions"
+                android:drawableStart="@drawable/error_icon"
+                android:drawableEnd="@drawable/next_icon"
+                android:drawablePadding="5dp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:layout_marginVertical="8dp"
+                android:background="@drawable/my_chip_bg"
+                android:backgroundTint="@color/my_bg_color"
+
+                android:padding="@dimen/p8"/>
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginTop="18dp"-->
+<!--                android:background="@drawable/normal_card_bg"-->
+<!--                android:padding="8dp"-->
+<!--                >-->
+
+<!--              -->
+<!--&lt;!&ndash;                <View&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="2dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:background="@drawable/dashed_line"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_marginVertical="8dp"/>&ndash;&gt;-->
+
+
+<!--            </LinearLayout>-->
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               >
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@color/brown"
+                   android:layout_gravity="center"
+
+                   android:layout_weight="1"
+                   />
+
+                <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="saving corner"
+               android:textAlignment="center"
+               android:layout_marginVertical="20dp"
+               android:fontFamily="@font/osc_medium"
+               android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="@dimen/p8"
+                    android:textSize="12sp"
+               android:textAllCaps="true"/>
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@color/brown"
+                   android:layout_gravity="center"
+
+                   android:layout_weight="1"
+                   />
+           </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/percent_card_star_shaped_"
                 android:drawableEnd="@drawable/next_icon"
                 android:text="apply coupon"
                 android:textColor="@color/black"
                 android:background="@drawable/normal_card_bg"
                 android:padding="8dp"
                 android:drawablePadding="5dp"
+                android:fontFamily="@font/osc_medium"
+                android:gravity="center_vertical"
+                android:backgroundTint="@color/my_bg_color"
+                android:layout_marginVertical="@dimen/p18"
+
                 />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/normal_card_bg"
-                android:padding="@dimen/d8"
-
+                android:orientation="vertical"
+                android:background="@drawable/stroke_brown"
+                android:padding="@dimen/p20"
                 >
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/check_icon"
-                    android:drawableTint="@color/green"
-                    android:text="Items @ ₹100 only applied!"
+                    android:text="Benefits on this order with GOLD"
                     android:textColor="@color/black"
-                    android:padding="5dp"
-                    android:drawablePadding="5dp"
-                    android:gravity="center"
+                    android:fontFamily="@font/osc_medium"
+                    android:layout_marginVertical="@dimen/p8"
                     />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/brown"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/free_delivery_"
+                    android:fontFamily="@font/osc_medium"
+                    android:layout_marginVertical="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time_guarantee_"
+                    android:fontFamily="@font/osc_medium"
+                    android:layout_marginVertical="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Know More"
+                    android:textColor="@color/red"
+                    android:fontFamily="@font/osc_medium"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/brown"
+                    android:layout_marginVertical="@dimen/p8"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Know More"
+                        android:textColor="@color/red"
+                        android:fontFamily="@font/osc_medium"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Know More"
+                        android:textColor="@color/red"
+                        android:fontFamily="@font/osc_medium"
+                        android:background="@drawable/red_stroke_bg"
+                        android:padding="5dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:background="@drawable/normal_card_bg"-->
+<!--                android:padding="@dimen/d8"-->
+
+<!--                >-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:drawableStart="@drawable/check_icon"-->
+<!--                    android:drawableTint="@color/green"-->
+<!--                    android:text="Items @ ₹100 only applied!"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:drawablePadding="5dp"-->
+<!--                    android:gravity="center"-->
+<!--                    />-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="- ₹100.00"-->
+<!--                    android:textColor="#0B25DF"-->
+<!--                    android:gravity="end|center_vertical"-->
+<!--                    android:paddingHorizontal="8dp"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    />-->
+<!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/brown"
+                    android:layout_gravity="center"
+
+                    android:layout_weight="1"
+                    />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="- ₹100.00"
-                    android:textColor="#0B25DF"
-                    android:gravity="end|center_vertical"
-                    android:paddingHorizontal="8dp"
-                    android:layout_gravity="center_vertical"
+                    android:text="Billing Summary"
+                    android:textAlignment="center"
+                    android:layout_marginVertical="20dp"
+                    android:fontFamily="@font/osc_medium"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="@dimen/p8"
+                    android:textSize="12sp"
+                    android:textAllCaps="true"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/brown"
+                    android:layout_gravity="center"
+
+                    android:layout_weight="1"
                     />
             </LinearLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="bill summary"
-                android:textAlignment="center"
-                android:layout_marginVertical="20dp"
-                android:fontFamily="@font/osc_medium"
-                android:textColor="@color/black"
-                android:textAllCaps="true"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:background="@drawable/normal_card_bg"
-                android:padding="5dp">
+                android:backgroundTint="@color/my_bg_color"
+
+                android:padding="@dimen/p8">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -385,7 +737,9 @@
                 android:layout_height="100dp"
                 android:layout_marginTop="18dp"
                 android:background="@drawable/normal_card_bg"
-                android:padding="5dp"
+                android:padding="8dp"
+                android:backgroundTint="@color/my_bg_color"
+
                 android:orientation="vertical">
                 <TextView
                     android:layout_width="match_parent"
@@ -428,6 +782,42 @@
 
 
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/brown"
+                    android:layout_gravity="center"
+
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BEFORE YOU PLACE THE ORDER"
+                    android:textAlignment="center"
+                    android:layout_marginVertical="20dp"
+                    android:fontFamily="@font/osc_medium"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="@dimen/p8"
+                    android:textSize="12sp"
+                    android:textAllCaps="true"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/brown"
+                    android:layout_gravity="center"
+
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

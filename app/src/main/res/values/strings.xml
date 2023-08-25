@@ -2,7 +2,7 @@
     <string name="app_name">ZomatoPbs</string>
     <string name="term">By continuing, you agree to our \n Terms of Service Privacy Policy Content Policy</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment">SherGill Productions</string>
     <string name="todo">my_todo</string>
     <string name="verify_account">Verify Account</string>
     <string name="resentotp">Resend Otp</string>
@@ -33,6 +33,13 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
     <string name="company_place">Possibility Solutions, c-127,4th floor</string>
     <string name="looking_delivery"><font fgcolor='#000000'>Looking for food delivery ?</font>\nView delivery menu</string>
     <string name="cvv"><u>What is CVV?</u></string>
+    <string name="blinkit"><font fgcolor='#000000'>Blink</font><font fgcolor='#328616'>it</font></string>
+    <string name="free_deliver_">get up to <font fgcolor='#000000'>100 off</font> and free delivery</string>
+    <string name="welcome_code">Use code <font fgcolor='#328616'>SherGill4983</font> on your first order</string>
+    <string name="kyc_"><font fgcolor='#000000'>1-step process to activate wallet\n</font><font size="8">Submit your KYC details and add up to $9k per month. \nThis is a one-time process required \nas per RBI guidelines.</font></string>
+    <string name="t_and_c">By continuing you agree to RBL Bank’s <font fgcolor='#FF0000'>Terms and Conditions</font></string>
+    <string name="free_delivery_"><font fgcolor='#000000'>Free delivery</font>\nAbove orders worth $233</string>
+    <string name="time_guarantee_"><font fgcolor='#000000'>On time guarantee</font>\nGet a $100 coupon if we delay</string>
 
     <string-array name="stringArray">
         <item>2</item>

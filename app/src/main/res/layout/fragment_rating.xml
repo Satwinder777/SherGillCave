@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.navigationfragment.dining.filterfragment.RatingFragment">
+
+
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        >-->
+<!--        -->
+<!--    </androidx.core.widget.NestedScrollView>-->
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:padding="20dp"
+       android:orientation="vertical">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="rating"
+           />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Any +"
+           android:textSize="@dimen/_18sdp"
+           android:textColor="@color/black"
+           android:fontFamily="@font/osc_bold1"
+           />
+<!--       <SeekBar-->
+<!--           android:id="@+id/seek_bar_1"-->
+<!--           android:layout_width="match_parent"-->
+<!--           android:layout_height="100dp"-->
+<!--           android:rotation="270"-->
+<!--           android:max="5"-->
+<!--           android:tickMark="@drawable/tickmark"-->
+<!--           android:thumb="@drawable/custom_thumb"-->
+<!--           android:maxWidth="20dp"-->
+<!--           android:layout_margin="0dp"-->
+<!--           android:padding="0dp"-->
+<!--           android:background="@color/red"-->
+<!--           android:progressDrawable="@drawable/custom_track"-->
+
+<!--           />-->
+
+       <com.google.android.material.slider.Slider
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:rotation="270"
+           app:thumbRadius="20dp"
+           android:layout_gravity="center"
+           android:layout_marginTop="100dp"
+           android:valueFrom="0.0"
+           android:valueTo="100.0"
+           android:stepSize="20.0"
+           app:tickColor="@color/white"
+           app:trackHeight="9dp"
+           app:trackColor="@color/black"
+           app:thumbColor="@color/black"
+           android:layout_marginHorizontal="35dp"
+
+           />
+
+
+   </LinearLayout>
+
+</FrameLayout>

@@ -277,8 +277,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                tools:itemCount="8"
+                app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+                tools:itemCount="12"
+                app:spanCount="2"
                 tools:listitem="@layout/recommended_item" />
 
 
@@ -318,11 +319,12 @@
                 android:id="@+id/offerrc"
 
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 tools:listitem="@layout/offer_item1"
                 android:orientation="horizontal"
-                tools:itemCount="8"
+                tools:itemCount="18"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:spanCount="3"
                 />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

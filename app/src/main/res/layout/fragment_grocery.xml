@@ -3,12 +3,245 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
     tools:context=".Fragment.navigationfragment.grocery.GroceryFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal"
+                android:paddingHorizontal="8dp">
+
+                <LinearLayout
+                    android:id="@+id/checkLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="5dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/baseline_location_on_24"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableEnd="@drawable/down_1ic"
+                            android:fontFamily="@font/osc_bold1"
+                            android:gravity="bottom"
+                            android:text="Possibility"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:ems="8"
+                            android:fontFamily="@font/osc_medium"
+                            android:gravity="bottom"
+                            android:lines="1"
+                            android:text="C-127,4th floor,phase 8 mohali"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/languageBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/normal_stroke"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/select_language"
+                    />
+
+                <TextView
+                    android:id="@+id/profileIcon"
+                    android:layout_width="31dp"
+                    android:layout_height="31dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_bg"
+                    android:backgroundTint="@color/purple_700"
+                    android:gravity="center"
+                    android:hint="dskjfhwdj"
+                    android:text="s"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Groceries in minutes!"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/osc_bold1"
+                android:layout_marginVertical="@dimen/p20"
+
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/pizza1"
+                android:scaleType="fitXY"
+                />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/p20"
+                app:cardBackgroundColor="#fffae7"
+                app:cardCornerRadius="16dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/p20"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:text="@string/blinkit"
+                        android:background="@drawable/normal_card_bg"
+                        android:padding="4dp"
+                        android:gravity="center"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/osc_bold1"
+                        android:backgroundTint="@color/yellow1_"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="India's last Minute App"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/osc_bold1"
+                        android:layout_marginTop="@dimen/p18"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/free_deliver_"
+                        android:textAlignment="center"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/welcome_code"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:layout_marginBottom="@dimen/p20"
+                        />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Install Blinkit now"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+
+                        android:backgroundTint="@color/green1_"
+                        android:fontFamily="@font/osc_bold1"
+                        android:textAllCaps="false"
+
+
+                        />
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ENJOY THESE BENEFITS"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enjoy 5000+ products to suit\nyour needs"
+                android:textColor="@color/black"
+                android:background="@drawable/normal_card_bg"
+                android:padding="@dimen/p18"
+                android:drawableStart="@drawable/food_"
+                android:backgroundTint="@color/my_bg_color"
+                android:drawablePadding="@dimen/p18"
+                android:layout_margin="@dimen/p18"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Everything delivery in\nminutes"
+                android:textColor="@color/black"
+                android:background="@drawable/normal_card_bg"
+                android:padding="@dimen/p18"
+                android:drawableStart="@drawable/time_glass"
+                android:backgroundTint="@color/my_bg_color"
+                android:drawablePadding="@dimen/p18"
+                android:layout_marginHorizontal="@dimen/p18"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Amazing payment and \nbank offers"
+                android:textColor="@color/black"
+                android:background="@drawable/normal_card_bg"
+                android:padding="@dimen/p18"
+                android:drawableStart="@drawable/credit_"
+                android:backgroundTint="@color/my_bg_color"
+                android:drawablePadding="@dimen/p18"
+                android:layout_margin="@dimen/p18"
+                />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
 
 </FrameLayout>

@@ -37,42 +37,21 @@ class GourmetFragment : Fragment() {
     fun initData():MutableList<popularItem>{
 
         return mutableListOf(
-            popularItem(
-            R.drawable.image1,
-            R.drawable.image2,
-            "Special Cake",
-            "Special Chawal",
-                ),
-
-            popularItem(
-                R.drawable.image3,
-                R.drawable.image4,
-                "Special Cake",
-                "Special Chawal",
-            ),
-
-            popularItem(
-                R.drawable.image1,
-                R.drawable.image2,
-                "Special Cake",
-                "Special Chawal",
-            ),
-
-            popularItem(
-                R.drawable.image1,
-                R.drawable.image2,
-                "Special Cake",
-                "Special Chawal",
-            ),
-
-            popularItem(
-                R.drawable.image3,
-                R.drawable.image4,
-                "Special Cake",
-                "Special Chawal",
-            ),
-
-
-            )
+            popularItem(R.drawable.image1, R.drawable.image2, "Special Cake", "Special Chawal",),
+            popularItem(R.drawable.image3, R.drawable.image4, "Special Cake", "Special Chawal",),
+            popularItem(R.drawable.image1, R.drawable.image2, "Special Cake", "Special Chawal",),
+            popularItem(R.drawable.image1, R.drawable.image2, "Special Cake", "Special Chawal",),
+            popularItem(R.drawable.image3, R.drawable.image4, "Special Cake", "Special Chawal",),
+            popularItem(R.drawable.image1, R.drawable.image2, "Special Cake", "Special Chawal",),
+            popularItem(R.drawable.image3, R.drawable.image4, "Special Cake", "Special Chawal",),
+            popularItem(R.drawable.image1, R.drawable.image2, "Special Cake", "Special Chawal",),
+            popularItem(R.drawable.image1, R.drawable.image2, "Special Cake", "Special Chawal",),
+            popularItem(R.drawable.image3, R.drawable.image4, "Special Cake", "Special Chawal",),
+            popularItem(R.drawable.image1, R.drawable.image2, "Special Cake", "Special Chawal",),
+            popularItem(R.drawable.image3, R.drawable.image4, "Special Cake", "Special Chawal",),
+            popularItem(R.drawable.image1, R.drawable.image2, "Special Cake", "Special Chawal",),
+            popularItem(R.drawable.image1, R.drawable.image2, "Special Cake", "Special Chawal",),
+            popularItem(R.drawable.image3, R.drawable.image4, "Special Cake", "Special Chawal",),
+        )
     }
 }

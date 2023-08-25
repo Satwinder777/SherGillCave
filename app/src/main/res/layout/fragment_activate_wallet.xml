@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/p20"
+    tools:context=".Fragment.navigationfragment.money.ActivateWalletFragment">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/onback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:background="@drawable/normal_card_bg"
+        android:padding="5dp"
+        android:backgroundTint="@color/my_bg_color"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activate Wallet"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:fontFamily="@font/osc_medium"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kyc_"
+        android:drawableEnd="@drawable/gif_5"
+        android:layout_marginVertical="@dimen/p8"
+        android:fontFamily="@font/osc_medium"
+        android:drawablePadding="@dimen/p8"
+        android:gravity="center_vertical"
+        android:background="@drawable/stroke_brown"
+        android:padding="@dimen/p10"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/my_bg_color"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_marginTop="@dimen/p8"
+        android:fontFamily="@font/osc_medium"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="Enter your name"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/osc_medium"
+        android:imeOptions="actionNext"
+
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:layout_marginTop="@dimen/p8"
+        android:fontFamily="@font/osc_medium"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="9877995258"
+        android:inputType="numberDecimal"
+        android:fontFamily="@font/osc_medium"
+        android:imeOptions="actionNext"
+
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Any Id :"
+        android:layout_marginTop="@dimen/p8"
+        android:fontFamily="@font/osc_medium"
+
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/p8"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driving License"
+            android:padding="5dp"
+            android:background="@drawable/stroke_brown"
+            android:textAlignment="center"
+            android:fontFamily="@font/osc_medium"
+
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PAN"
+            android:padding="5dp"
+            android:background="@drawable/stroke_brown"
+            android:textAlignment="center"
+            android:layout_marginHorizontal="5dp"
+            android:fontFamily="@font/osc_medium"
+            android:layout_weight="1"
+
+
+
+
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passport"
+            android:padding="5dp"
+            android:background="@drawable/stroke_brown"
+            android:textAlignment="center"
+            android:fontFamily="@font/osc_medium"
+
+
+
+            />
+
+    </RadioGroup>
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Enter PAN Card Number "
+    android:layout_marginTop="@dimen/p8"
+    android:fontFamily="@font/osc_medium"
+
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+
+        android:inputType="numberDecimal"
+        android:fontFamily="@font/osc_medium"
+        android:backgroundTint="@color/red"
+        android:imeOptions="actionNext"
+        />
+    <TextView
+        android:id="@+id/onTandc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/t_and_c"
+        android:textSize="12sp"
+        android:layout_marginTop="@dimen/p20"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/oncontinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:insetBottom="0dp"
+        android:insetTop="0dp"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:layout_marginVertical="@dimen/p18"
+        android:imeOptions="actionGo"
+        android:backgroundTint="@color/red"
+        android:textAllCaps="false"
+        />
+
+</LinearLayout>
+</FrameLayout>

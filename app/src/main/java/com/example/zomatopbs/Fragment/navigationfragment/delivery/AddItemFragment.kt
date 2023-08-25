@@ -29,7 +29,8 @@ class AddItemFragment : BottomSheetDialogFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.pizzademo.setOnClickListener {
+
+        binding.addItemcard.setOnClickListener {
             val dialog = ItemsAddedFragment(this)
 
            dialog.show(requireFragmentManager(),MyConstant.tag)

@@ -35,13 +35,13 @@ class RecommendedItemAdapter(val list: MutableList<recommendItemData>,val onclic
     class RecommednedCls(view: View):RecyclerView.ViewHolder(view) {
 //        val sortxt = view.findViewById<TextView>(R.id.myText)
         val recomm_img1 = view.findViewById<ImageView>(R.id.recomm_img1)
-        val recomm_img2 = view.findViewById<ImageView>(R.id.recomm_img2)
+//        val recomm_img2 = view.findViewById<ImageView>(R.id.recomm_img2)
 
         val recomm_title1 = view.findViewById<TextView>(R.id.recomm_title1)
-        val recomm_title2 = view.findViewById<TextView>(R.id.recomm_title2)
+//        val recomm_title2 = view.findViewById<TextView>(R.id.recomm_title2)
 
         val recomm_offer1 = view.findViewById<TextView>(R.id.recomm_offer1)
-        val recomm_offer2 = view.findViewById<TextView>(R.id.recomm_offer2)
+//        val recomm_offer2 = view.findViewById<TextView>(R.id.recomm_offer2)
 
         val recomm_time1 = view.findViewById<TextView>(R.id.recomm_time1)
         val recomm_time2 = view.findViewById<TextView>(R.id.recomm_time1)
@@ -51,13 +51,13 @@ class RecommendedItemAdapter(val list: MutableList<recommendItemData>,val onclic
         fun bind(item:recommendItemData){
 
             recomm_img1.setImageResource(item.img1)
-            recomm_img2.setImageResource(item.img2)
+//            recomm_img2.setImageResource(item.img2)
 
             recomm_title1.text = item.recomm_title
-            recomm_title2.text = item.recomm_title2
+//            recomm_title2.text = item.recomm_title2
 
             recomm_offer1.text = item.recomm_offer1
-            recomm_offer2.text = item.recomm_offer2
+//            recomm_offer2.text = item.recomm_offer2
 
             recomm_time1.text = item.recomm_text
             recomm_time2.text = item.recomm_text2

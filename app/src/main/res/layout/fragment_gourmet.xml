@@ -106,8 +106,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/normal_card_bg"
-            android:padding="5dp"
+            android:background="@drawable/my_chip_bg"
+            android:padding="10dp"
             android:layout_marginVertical="@dimen/_18sdp"
             >
             <EditText
@@ -271,10 +271,10 @@
             android:id="@+id/popular_item_rc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             tools:listitem="@layout/popular_breakfast_item_rc"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            android:padding="@dimen/d8"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="4"
 
             />
     </LinearLayout>

@@ -23,6 +23,7 @@
         android:textStyle="bold"
         android:textSize="24sp"
         android:layout_marginTop="20sp"
+        android:fontFamily="@font/osc_bold1"
         />
 
     <ImageView
@@ -40,6 +41,8 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         android:textAlignment="center"
+        android:fontFamily="@font/osc_bold1"
+        android:textSize="22sp"
         />
     <TextView
         android:layout_width="match_parent"
@@ -50,6 +53,7 @@ zomato"
         android:textStyle="bold"
         android:layout_marginTop="@dimen/d8"
         android:gravity="center"
+        android:fontFamily="@font/osc_medium"
         />
 
     <com.google.android.material.button.MaterialButton
@@ -60,6 +64,7 @@ zomato"
         android:insetBottom="0dp"
         android:backgroundTint="@color/red"
         android:layout_marginTop="@dimen/_18sdp"
+        android:fontFamily="@font/osc_medium"
         />
     <LinearLayout
         android:layout_width="wrap_content"
@@ -86,6 +91,10 @@ zomato"
                 android:text="One-click checkout"
                 android:textColor="@color/black"
                 android:textStyle="bold"
+                android:fontFamily="@font/osc_medium"
+                android:textSize="16sp"
+
+
                 />
 
             <TextView
@@ -93,6 +102,9 @@ zomato"
                 android:layout_height="wrap_content"
                 android:text="No need to wait for OTPs - payments\nget processed instantly"
                 android:textStyle="bold"
+                android:fontFamily="@font/osc_medium"
+                android:textSize="12sp"
+
                 />        </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -121,6 +133,9 @@ zomato"
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:layout_weight="1"
+                android:fontFamily="@font/osc_medium"
+                android:textSize="16sp"
+
                 />
 
             <TextView
@@ -129,6 +144,9 @@ zomato"
                 android:text="No need to wait for OTPs - payments\nget processed instantly"
                 android:textStyle="bold"
                 android:layout_weight="1"
+                android:fontFamily="@font/osc_medium"
+                android:textSize="12sp"
+
 
                 />
         </LinearLayout>

@@ -3,8 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray1"
-    android:padding="@dimen/d8"
+    android:padding="@dimen/p20"
     tools:context=".Fragment.navigationfragment.delivery.bottomsheetfragment.DeliveryAtLocationFragment">
 
     <LinearLayout

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".Fragment.navigationfragment.dining.FilterFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sort"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/osc_bold1"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/brown"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+
+            >
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Sort\nRelevance"
+                    android:focusable="true"
+                    android:gravity="center_vertical|start"
+                    android:drawablePadding="@dimen/d8"
+                    android:drawableStart="@drawable/vertical_line_bg"
+                    android:fontFamily="@font/osc_bold1"
+                    />
+                <TextView
+                    android:id="@+id/btn1"
+
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical|start"
+                    android:drawablePadding="@dimen/d8"
+                    android:layout_height="60dp"
+                    android:text="Cuisines"
+                    android:padding="5dp"
+                    android:fontFamily="@font/osc_bold1"
+
+                    />
+                <TextView
+                    android:id="@+id/btn2"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Rating"
+                    android:padding="5dp"
+
+                    android:gravity="center_vertical|start"
+                    android:drawablePadding="@dimen/d8"
+                    android:fontFamily="@font/osc_bold1"
+
+                    />
+                <TextView
+                    android:id="@+id/btn3"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Cost for two"
+                    android:padding="5dp"
+
+                    android:gravity="center_vertical|start"
+                    android:drawablePadding="@dimen/d8"
+                    android:fontFamily="@font/osc_bold1"
+
+                    />
+                <TextView
+                    android:id="@+id/btn4"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="More filters"
+                    android:padding="5dp"
+
+                    android:gravity="center_vertical|start"
+                    android:drawablePadding="@dimen/d8"
+                    android:fontFamily="@font/osc_bold1"
+
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/brown"
+                />
+
+            <!-- <com.google.android.material.tabs.TabLayout-->
+            <!--     android:id="@+id/tabLayout"-->
+            <!--     android:layout_width="wrap_content"-->
+            <!--     android:orientation="horizontal"-->
+            <!--     android:layout_height="match_parent"/>-->
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/d8"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/brown"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/clearAllBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="clear All"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:fontFamily="@font/osc_bold1"
+
+                />
+            <TextView
+                android:id="@+id/applyBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:insetBottom="0dp"
+                android:insetTop="0dp"
+                android:text="Apply"
+                android:background="@drawable/normal_card_bg"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                app:cornerRadius="18dp"
+                android:backgroundTint="@color/red"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/d8"
+                android:fontFamily="@font/osc_bold1"
+                android:textSize="@dimen/_18sdp"
+
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/brown"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+</FrameLayout>

@@ -32,5 +32,7 @@
     <color name="normal_carrd_bg">#94b387</color>
     <color name="normal_black">#1c1c1c</color>
     <color name="light_pink">#FE7E8B</color>
+    <color name="yellow1_">#f7cb46</color>
+    <color name="green1_">#328616</color>
 
 </resources>

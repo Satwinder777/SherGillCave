@@ -3,9 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="@dimen/d8"
+    android:padding="@dimen/p18"
     android:layout_gravity="top"
-    android:background="@color/gray1"
 
     tools:context=".Fragment.navigationfragment.delivery.bottomsheetfragment.SelectlanguageBSheetFragment">
 
@@ -13,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_marginTop="@dimen/d8"
         >
 
         <TextView
@@ -37,23 +37,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/usa_icon1"
-                android:paddingHorizontal="@dimen/d8"
+
                 android:text="English"
                 android:background="@drawable/normal_card_bg"
-                android:padding="8dp"
+                android:paddingStart="18dp"
                 android:layout_marginVertical="5dp"
+                android:backgroundTint="@color/my_bg_color"
+
+
 
                 />
 
-            <RadioButton
+            <com.google.android.material.radiobutton.MaterialRadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/golden_temple"
                 android:paddingHorizontal="@dimen/d8"
                 android:text="Punjabi"
                 android:background="@drawable/normal_card_bg"
-                android:padding="8dp"
+                android:paddingStart="18dp"
                 android:layout_marginVertical="5dp"
+                android:backgroundTint="@color/my_bg_color"
 
                 />
 
@@ -61,11 +65,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/lalkila_icon"
-                android:paddingHorizontal="@dimen/d8"
+
                 android:text="Hindi"
                 android:background="@drawable/normal_card_bg"
-                android:padding="8dp"
-                android:layout_marginVertical="5dp"
+                android:backgroundTint="@color/my_bg_color"
+                android:paddingStart="18dp"
+
                 />
 
             <RadioButton
@@ -75,7 +80,8 @@
                 android:paddingHorizontal="@dimen/d8"
                 android:text="Urdu"
                 android:background="@drawable/normal_card_bg"
-                android:padding="8dp"
+                android:backgroundTint="@color/my_bg_color"
+                android:paddingStart="18dp"
                 android:layout_marginVertical="5dp"
 
                 />
@@ -84,11 +90,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/jain_icon"
-                android:paddingHorizontal="@dimen/d8"
+
                 android:text="Marathi"
                 android:background="@drawable/normal_card_bg"
-
-                android:padding="8dp"/>
+                android:backgroundTint="@color/my_bg_color"
+                android:paddingStart="18dp"
+                 />
 
 
         </RadioGroup>

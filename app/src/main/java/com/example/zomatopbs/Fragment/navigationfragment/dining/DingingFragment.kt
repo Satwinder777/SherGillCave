@@ -40,9 +40,7 @@ class DingingFragment : Fragment(), LovedRestaurantAdapter.OnLovedItemClick {
 
         binding.checkLocation.setOnClickListener{
             try {
-
                 findNavController().navigate(R.id.selectLocationFragment)
-
             }
             catch (e:Exception){
                 Log.e("Sattaexp", "onViewCreated: exception is :>>  ${e.message}", )
@@ -57,7 +55,7 @@ class DingingFragment : Fragment(), LovedRestaurantAdapter.OnLovedItemClick {
             findNavController().navigate(R.id.supportMessengerFragment)
 //            bottomSheetFragment.show(requireFragmentManager(), bottomSheetFragment.tag)
         }
-        binding.sortSheet.setOnClickListener {
+        binding.filterSheet.setOnClickListener {
             try {
                 val sort = FilterFragment()
 //
@@ -68,6 +66,10 @@ class DingingFragment : Fragment(), LovedRestaurantAdapter.OnLovedItemClick {
                 Log.e("sattatest", "onViewCreated: ${e.message}", )
             }
 
+        }
+
+        binding.goldOffers.setOnClickListener {
+            findNavController().navigate(R.id.goldOfferFragment)
         }
 
     }

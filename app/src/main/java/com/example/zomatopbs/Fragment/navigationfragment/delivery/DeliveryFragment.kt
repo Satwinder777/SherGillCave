@@ -70,7 +70,6 @@ class DeliveryFragment : Fragment() ,RecommendedItemAdapter.onRecommendedItemCli
         }
         binding.languageBtn.setOnClickListener {
            val bottomSheetFragment = SelectlanguageBSheetFragment()
-
             bottomSheetFragment.show(requireFragmentManager(), bottomSheetFragment.tag)
         }
         binding.sortSheet.setOnClickListener {
@@ -120,7 +119,6 @@ companion object data{
             }
             recommendItemData1->{
                 val list = mutableListOf<recommendItemData>(recommendItemData(R.drawable.pizza1,R.drawable.pizza2,"title1","title2","text1","text2","offer_1","offer_2")
-
                 ,recommendItemData(R.drawable.pizza1,R.drawable.pizza2,"title1","title2","text1","text2","offer_1","offer_2"),
                     recommendItemData(R.drawable.pizza1,R.drawable.pizza2,"title1","title2","text1","text2","offer_1","offer_2"),recommendItemData(R.drawable.pizza1,R.drawable.pizza2,"title1","title2","text1","text2","offer_1","offer_2")
                         ,recommendItemData(R.drawable.pizza1,R.drawable.pizza2,"title1","title2","text1","text2","offer_1","offer_2")

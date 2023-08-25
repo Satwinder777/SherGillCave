@@ -6,148 +6,154 @@
     android:padding="@dimen/_18sdp"
     tools:context=".Fragment.navigationfragment.delivery.bottomsheetfragment.SortBSheetFragment">
 
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:orientation="vertical"
-       >
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
 
-       <TextView
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:textSize="22sp"
-           android:text="Sort"
-           android:textColor="@color/black"
-           android:textStyle="bold"
-           android:fontFamily="@font/osc_bold1"
-           />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="Sort"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/osc_bold1"
+                />
 
-       <RadioGroup
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:orientation="vertical"
-           >
-
-
-           <RadioButton
-
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:button="@null"
-               android:drawableRight="?android:attr/listChoiceIndicatorSingle"
-               android:background="?android:selectableItemBackground"
-               android:layout_gravity="start"
-               android:textAlignment="textStart"
-                android:drawableTint="@color/red"
-               android:layout_marginTop="@dimen/d8"
-               android:text="Relevance"/>
-
-           <RadioButton
-               android:id="@+id/btn2"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:button="@null"
-               android:drawableRight="?android:attr/listChoiceIndicatorSingle"
-               android:background="?android:selectableItemBackground"
-               android:layout_gravity="start"
-               android:textAlignment="textStart"
-               android:drawableTint="@color/red"
-
-               android:text="Rating: High To Low" />
-
-           <RadioButton
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:button="@null"
-               android:drawableRight="?android:attr/listChoiceIndicatorSingle"
-               android:background="?android:selectableItemBackground"
-               android:layout_gravity="start"
-               android:textAlignment="textStart"
-               android:drawableTint="@color/red"
-
-               android:text="Delivery Time: Low To High"/>
-
-           <RadioButton
-
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:button="@null"
-               android:drawableRight="?android:attr/listChoiceIndicatorSingle"
-               android:background="?android:selectableItemBackground"
-               android:layout_gravity="start"
-               android:textAlignment="textStart"
-               android:drawableTint="@color/red"
-
-               android:text="Delivery Time  Relevance" />
-
-           <RadioButton
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:button="@null"
-               android:drawableRight="?android:attr/listChoiceIndicatorSingle"
-               android:background="?android:selectableItemBackground"
-               android:layout_gravity="start"
-               android:textAlignment="textStart"
-               android:drawableTint="@color/red"
-
-               android:text="Distance: Low To High"/>
-
-           <RadioButton
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:button="@null"
-               android:drawableRight="?android:attr/listChoiceIndicatorSingle"
-               android:background="?android:selectableItemBackground"
-               android:layout_gravity="start"
-               android:textAlignment="textStart"
-               android:drawableTint="@color/red"
-
-               android:text="Cost: Low To High" />
-
-           <RadioButton
-               android:id="@+id/btn1"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:button="@null"
-               android:drawableRight="?android:attr/listChoiceIndicatorSingle"
-               android:background="?android:selectableItemBackground"
-               android:layout_gravity="start"
-               android:textAlignment="textStart"
-               android:drawableTint="@color/red"
-
-               android:text="Cost: High To Low"/>
-
-           <LinearLayout
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:orientation="horizontal"
-               android:layout_marginVertical="@dimen/d8"
-               >
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:layout_weight="1"
-                   android:text="Clear All"
-                   android:textColor="@color/red"
-                   android:fontFamily="@font/osc_bold1"
-                   android:gravity="center"
-                   />
-
-               <com.google.android.material.button.MaterialButton
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:layout_weight="1"
-                   android:text="Apply"
-                   android:backgroundTint="@color/red"
-                   android:textColor="@color/white"
-                   android:insetTop="0dp"
-                   android:insetBottom="0dp"
-                   />
-           </LinearLayout>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
 
 
+                <RadioButton
 
-       </RadioGroup>
-   </LinearLayout>
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                    android:background="?android:selectableItemBackground"
+                    android:layout_gravity="start"
+                    android:textAlignment="textStart"
+                    android:drawableTint="@color/red"
+                    android:layout_marginTop="@dimen/d8"
+                    android:text="Relevance"/>
+
+                <RadioButton
+                    android:id="@+id/btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                    android:background="?android:selectableItemBackground"
+                    android:layout_gravity="start"
+                    android:textAlignment="textStart"
+                    android:drawableTint="@color/red"
+
+                    android:text="Rating: High To Low" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                    android:background="?android:selectableItemBackground"
+                    android:layout_gravity="start"
+                    android:textAlignment="textStart"
+                    android:drawableTint="@color/red"
+
+                    android:text="Delivery Time: Low To High"/>
+
+                <RadioButton
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                    android:background="?android:selectableItemBackground"
+                    android:layout_gravity="start"
+                    android:textAlignment="textStart"
+                    android:drawableTint="@color/red"
+
+                    android:text="Delivery Time  Relevance" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                    android:background="?android:selectableItemBackground"
+                    android:layout_gravity="start"
+                    android:textAlignment="textStart"
+                    android:drawableTint="@color/red"
+
+                    android:text="Distance: Low To High"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                    android:background="?android:selectableItemBackground"
+                    android:layout_gravity="start"
+                    android:textAlignment="textStart"
+                    android:drawableTint="@color/red"
+
+                    android:text="Cost: Low To High" />
+
+                <RadioButton
+                    android:id="@+id/btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                    android:background="?android:selectableItemBackground"
+                    android:layout_gravity="start"
+                    android:textAlignment="textStart"
+                    android:drawableTint="@color/red"
+
+                    android:text="Cost: High To Low"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="@dimen/d8"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Clear All"
+                        android:textColor="@color/red"
+                        android:fontFamily="@font/osc_bold1"
+                        android:gravity="center"
+                        />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Apply"
+                        android:backgroundTint="@color/red"
+                        android:textColor="@color/white"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        />
+                </LinearLayout>
+
+
+
+            </RadioGroup>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
 
 </FrameLayout>

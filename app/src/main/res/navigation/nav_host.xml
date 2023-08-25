@@ -239,6 +239,16 @@
         android:name="com.example.zomatopbs.Fragment.navigationfragment.dining.FilterFragment"
         android:label="fragment_filter"
         tools:layout="@layout/fragment_filter" />
+    <fragment
+        android:id="@+id/goldOfferFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.dining.GoldOfferFragment"
+        android:label="fragment_gold_offer"
+        tools:layout="@layout/fragment_gold_offer" />
+    <fragment
+        android:id="@+id/activateWalletFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.money.ActivateWalletFragment"
+        android:label="fragment_activate_wallet"
+        tools:layout="@layout/fragment_activate_wallet" />
 
 </navigation>
 

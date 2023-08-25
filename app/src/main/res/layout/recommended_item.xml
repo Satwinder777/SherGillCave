@@ -39,6 +39,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
@@ -82,70 +83,70 @@
                     tools:ignore="MissingConstraints" />
             </LinearLayout>
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="5dp"
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:layout_marginTop="5dp"-->
 
-            android:orientation="horizontal">
+<!--            android:orientation="horizontal">-->
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/purple_200"
-                app:cardCornerRadius="10dp"
-                >
-                <ImageView
-                    android:id="@+id/recomm_img2"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/pizza1"/>
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:backgroundTint="@color/purple_200"-->
+<!--                app:cardCornerRadius="10dp"-->
+<!--                >-->
+<!--                <ImageView-->
+<!--                    android:id="@+id/recomm_img2"-->
+<!--                    android:layout_width="70dp"-->
+<!--                    android:layout_height="70dp"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:src="@drawable/pizza1"/>-->
 
 
-            </androidx.cardview.widget.CardView>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+<!--            </androidx.cardview.widget.CardView>-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical">-->
 
-                <TextView
-                    android:id="@+id/recomm_title2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="8dp"
-                    android:text="Introducing "
-                    android:textColor="@color/black"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/osc_bold1"
+<!--                <TextView-->
+<!--                    android:id="@+id/recomm_title2"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginHorizontal="8dp"-->
+<!--                    android:text="Introducing "-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:fontFamily="@font/osc_bold1"-->
 
-                    />
+<!--                    />-->
 
-                <TextView
-                    android:id="@+id/recomm_time2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="8dp"
-                    android:text="Possibilitty Gold"
-                    android:textSize="13sp"
-                    android:layout_weight="1"
-                    android:drawableStart="@drawable/timer_ic"
-                    android:gravity="center_vertical"
-                    android:textColor="@color/black"
-                    />
+<!--                <TextView-->
+<!--                    android:id="@+id/recomm_time2"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginHorizontal="8dp"-->
+<!--                    android:text="Possibilitty Gold"-->
+<!--                    android:textSize="13sp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:drawableStart="@drawable/timer_ic"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    />-->
 
-                <TextView
-                    android:id="@+id/recomm_offer2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="8dp"
-                    android:layout_weight="1"
-                    android:text="You are invited1 "
-                    android:textColor="@color/purple_700"
-                    android:textSize="10sp"
-                    tools:ignore="MissingConstraints" />
-            </LinearLayout>
-        </LinearLayout>
+<!--                <TextView-->
+<!--                    android:id="@+id/recomm_offer2"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginHorizontal="8dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="You are invited1 "-->
+<!--                    android:textColor="@color/purple_700"-->
+<!--                    android:textSize="10sp"-->
+<!--                    tools:ignore="MissingConstraints" />-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
