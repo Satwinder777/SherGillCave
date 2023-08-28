@@ -1,6 +1,15 @@
 <resources>
     <string name="app_name">ZomatoPbs</string>
     <string name="term">By continuing, you agree to our \n Terms of Service Privacy Policy Content Policy</string>
+
+    <string name="facebook_app_id">754004826736369</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">abf48acdb72f9221450bd6dd047b835f</string>
+    <string name="google_maps_key">AIzaSyAsSMYb29gSo5bq2Ip-3lwx5mhqToxd5W8</string>
+    <string name="facebook_secret_key">aa27c30181bbec85570a4fec59ea04db</string>
+
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">SherGill Productions</string>
     <string name="todo">my_todo</string>
@@ -10,7 +19,7 @@
     <string name="home_address">House no. 60 block H, Top floor, Tower H ,\nHousefed Complex 1, Sector 79.</string>
     <string name="place_text">4th floor, C-127,Phase-8, Industrial Area, Sector 73, Sahibzada Ajit Singh Nagar, Punjab</string>
     <string name="delivery_in_25_30_min"> Delivery in  <font fgcolor='#000000'>25-30 Min </font></string>
-    <string name="delivery_at"> Delivery at <font fgcolor='#000000'>House no. 60 block H, Top floor, Tower H , Housefed Complex 1, Sector 79.</font></string>
+    <string name="delivery_at">Delivery at <font fgcolor='#000000'>House no. 60 block H, Top floor, Tower H , Housefed Complex 1, Sector 79.</font></string>
     <string name="bill_payed"><font fgcolor='#000000'>Others</font>\n<font fgcolor='#858381'>*****94522</font></string>
     <string name="_100_150">₹100<font fgcolor='#000000'> ₹150</font></string>
     <string name="cancelation_policy">For 3 months at $245. You are or 3 months at $245. Yo now getting 15% OFF on this or 3 months at $245. Yo billFor 3 months at $245. You are or 3 months at $245. now getting 15% OFF on this</string>
@@ -40,6 +49,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
     <string name="t_and_c">By continuing you agree to RBL Bank’s <font fgcolor='#FF0000'>Terms and Conditions</font></string>
     <string name="free_delivery_"><font fgcolor='#000000'>Free delivery</font>\nAbove orders worth $233</string>
     <string name="time_guarantee_"><font fgcolor='#000000'>On time guarantee</font>\nGet a $100 coupon if we delay</string>
+    <string name="default_web_client_id_1">866686919473-u2nlcqiglknai0vh6tk93bdjt7biicml.apps.googleusercontent.com</string>
 
     <string-array name="stringArray">
         <item>2</item>

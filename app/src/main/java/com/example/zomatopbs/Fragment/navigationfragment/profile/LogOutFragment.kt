@@ -9,8 +9,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
+import androidx.navigation.fragment.findNavController
 import com.example.zomatopbs.R
 import com.example.zomatopbs.databinding.FragmentLogOutBinding
+import com.example.zomatopbs.sharephref.SharedPreferencesHelper
 
 
 class LogOutFragment : DialogFragment() {
@@ -40,6 +42,18 @@ class LogOutFragment : DialogFragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.cancelButton.setOnClickListener {
             this.dismiss()
+        }
+        binding.currentDevice.setOnClickListener {
+            this.dismiss()
+            SharedPreferencesHelper(requireContext()).clearAllData()
+            findNavController().navigateUp()
+            findNavController().popBackStack()
+        }
+        binding.allDevices.setOnClickListener {
+            this.dismiss()
+            SharedPreferencesHelper(requireContext()).clearAllData()
+            val fragmentToRemove = requireActivity().finish()
+
         }
 
     }

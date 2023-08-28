@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "866686919473",
+    "project_id": "shergillcave",
+    "storage_bucket": "shergillcave.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866686919473:android:59effa1b5387ef953c4610",
+        "android_client_info": {
+          "package_name": "com.example.zomatopbs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "866686919473-etco6936blr3glfu9j10ei3vhlas8stq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zomatopbs",
+            "certificate_hash": "1232948d7a222b1c7b86402397c10f01ac52509d"
+          }
+        },
+        {
+          "client_id": "866686919473-u2nlcqiglknai0vh6tk93bdjt7biicml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAz8VNqeUdcSBt3HScuMXSSUgVul5H-4YY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "866686919473-07rhn8js3u8ps9i341e5peh0mf7lh70g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

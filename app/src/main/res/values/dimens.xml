@@ -11,6 +11,9 @@
     <dimen name="dialog_corner_radius">16dp</dimen>
     <dimen name="p18">18dp</dimen>
     <dimen name="p10">10dp</dimen>
+    <dimen name="s10">10sp</dimen>
     <dimen name="p20">20dp</dimen>
+    <dimen name="s20">20sp</dimen>
     <dimen name="p8">8dp</dimen>
+    <dimen name="s16">16sp</dimen>
 </resources>

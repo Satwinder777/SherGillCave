@@ -30,6 +30,11 @@ class FoodDetailsFragment : Fragment() {
             findNavController().navigate(R.id.orderSummaryFragment)
         }
 
+        binding.backbtn.setOnClickListener {
+            requireActivity().onBackPressed()
+        }
+
+
     }
 
 }

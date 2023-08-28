@@ -87,6 +87,7 @@
                 android:textAllCaps="true"
                 android:textSize="12sp"
                 android:layout_gravity="center"
+                android:backgroundTint="#1DB34F4F"
                 />
         </androidx.appcompat.widget.LinearLayoutCompat>
 

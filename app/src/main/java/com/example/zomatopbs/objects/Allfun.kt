@@ -29,6 +29,10 @@ object Allfun {
         fragmentTransaction.replace(R.id.nav_host_fragment,to)
         fragmentTransaction.addToBackStack(null) // Add to back stack so user can navigate back
         fragmentTransaction.commit()
+
+
+
+
     }
 
      fun closeFragment(manager: FragmentManager, removeFragment:Fragment) {
