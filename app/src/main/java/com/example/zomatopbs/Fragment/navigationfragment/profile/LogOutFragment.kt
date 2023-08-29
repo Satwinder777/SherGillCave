@@ -52,7 +52,7 @@ class LogOutFragment : DialogFragment() {
         binding.allDevices.setOnClickListener {
             this.dismiss()
             SharedPreferencesHelper(requireContext()).clearAllData()
-            val fragmentToRemove = requireActivity().finish()
+//            val fragmentToRemove = requireActivity().finish()
 
         }
 

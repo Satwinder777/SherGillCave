@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import androidx.lifecycle.ViewModelProvider
 import com.example.zomatopbs.Activities.LoginActivity
+import com.example.zomatopbs.Fragment.login.NavActivity
 import com.example.zomatopbs.MainActivity
 import com.example.zomatopbs.R
 import com.example.zomatopbs.SplaceData.viewmodel.SplaceViewModel
@@ -34,9 +35,13 @@ class SplaceScreenActivity : AppCompatActivity() {
 //                finish()
             }
             else{
-                startActivity(Intent(this, LoginActivity::class.java))
+                startActivity(Intent(this, NavActivity::class.java))
 //                finish()
-
+//                val fragment = 
+//                val transaction = fragmentManager.beginTransaction()
+//                transaction.replace(R.id.splacescr, fragment)
+//                transaction.addToBackStack(null)
+//                transaction.commit()
             }
            this.finish()
         }, 2000)

@@ -2,12 +2,16 @@
     <string name="app_name">ZomatoPbs</string>
     <string name="term">By continuing, you agree to our \n Terms of Service Privacy Policy Content Policy</string>
 
-    <string name="facebook_app_id">754004826736369</string>
-    <string name="fb_login_protocol_scheme">fb1234</string>
-    <string name="facebook_client_token">abf48acdb72f9221450bd6dd047b835f</string>
     <string name="google_maps_key">AIzaSyAsSMYb29gSo5bq2Ip-3lwx5mhqToxd5W8</string>
     <string name="facebook_secret_key">aa27c30181bbec85570a4fec59ea04db</string>
 
+
+    <string name="my_hash">zY00cczs2SG28RTn1bZQvsCftvI=</string>
+    <string name="my_hash1">ga0RGNYHvNM5d0SLGQfpQWAPGJ8=</string>
+
+    <string name="facebook_app_id">754004826736369</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">abf48acdb72f9221450bd6dd047b835f</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->

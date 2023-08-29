@@ -13,6 +13,7 @@ import com.example.zomatopbs.R
 import com.example.zomatopbs.databinding.FragmentProfileBinding
 import com.example.zomatopbs.objects.Allfun
 import com.example.zomatopbs.objects.MyConstant
+import com.example.zomatopbs.sharephref.SharedPreferencesHelper
 
 
 class ProfileFragment : Fragment() {
@@ -25,6 +26,8 @@ class ProfileFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         binding = FragmentProfileBinding.inflate(layoutInflater)
+
+        initUi()
 
         return binding.root
     }
@@ -162,5 +165,13 @@ class ProfileFragment : Fragment() {
 
     }
 
+
+    private fun initUi(){
+       val data =  SharedPreferencesHelper(requireContext()).getString(MyConstant.key,MyConstant.defaultValue)
+        val mail = data
+        binding.mailTextView.text = data
+        val firstChar = data.get(0)
+        binding.editprofile.setText(firstChar.toString())
+    }
 
 }

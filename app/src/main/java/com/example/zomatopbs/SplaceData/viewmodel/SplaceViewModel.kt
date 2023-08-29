@@ -12,10 +12,7 @@ class SplaceViewModel: ViewModel() {
         val myKey = MyConstant.key
        val loggedUserDetails = myphref.getString(myKey,"not user found")
 
-//        return when(userAuthenticity.userAuthenticated){
-//             userAuthenticity.userAuthenticated->{}
-//            userAuthenticity.userNotAuthenticated->{}
-//        }
+
        return if (loggedUserDetails!=null && loggedUserDetails!="not user found"){
             true
         }

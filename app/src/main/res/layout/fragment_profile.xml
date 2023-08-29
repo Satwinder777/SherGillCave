@@ -46,7 +46,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView40"
+                        android:id="@+id/nameTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Possibility Solutions Pvt Ltd."
@@ -60,7 +60,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <TextView
-                        android:id="@+id/textView41"
+                        android:id="@+id/mailTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_marginVertical="@dimen/d1"

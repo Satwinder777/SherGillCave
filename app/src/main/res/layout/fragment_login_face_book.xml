@@ -6,7 +6,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="@dimen/p20"
     android:orientation="vertical"
-    tools:context=".Fragment.login.LoginFaceBookFragment">
+    tools:context=".Fragment.login.LoginFaceBookFragment"
+
+    >
 
 
 <!--    <com.facebook.login.widget.LoginButton-->
@@ -15,28 +17,32 @@
 <!--        android:layout_height="wrap_content" />
 -->
 
-    <com.facebook.login.widget.LoginButton
-        android:id="@+id/facebookBtn"
+<!--    <com.facebook.login.widget.LoginButton-->
+<!--        android:id="@+id/facebookBtn"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="100dp"-->
+
+
+<!--        tools:ignore="MissingConstraints" />-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/facebook"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:text="Continue with Email"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:padding="@dimen/p8"
+        android:background="@drawable/stroke_brown"
+        app:icon="@drawable/facebook_ic_"
+        app:iconGravity="textStart"
+        android:layout_marginTop="@dimen/p8"
+        android:fontFamily="@font/osc_medium"
+        app:backgroundTint="@color/red"
         android:layout_weight="1"
+        app:iconTintMode="multiply"
 
-
-        tools:ignore="MissingConstraints" />
-<!--    <com.google.android.material.button.MaterialButton-->
-<!--        android:id="@+id/facebook"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Continue Using Facebook"-->
-<!--        android:textAlignment="center"-->
-<!--        android:padding="@dimen/p8"-->
-<!--        android:background="@drawable/stroke_brown"-->
-<!--        app:icon="@drawable/facebook_ic_"-->
-<!--        app:iconGravity="textStart"-->
-<!--        android:layout_marginTop="@dimen/p8"-->
-<!--        android:fontFamily="@font/osc_medium"-->
-<!--        app:iconTint=""-->
-<!--        />-->
+        />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/email"
@@ -48,12 +54,14 @@
         android:textAlignment="center"
         android:padding="@dimen/p8"
         android:background="@drawable/stroke_brown"
-        app:icon="@drawable/email_ic_"
+        app:icon="@drawable/gmail_ic"
         app:iconGravity="textStart"
         android:layout_marginTop="@dimen/p8"
         android:fontFamily="@font/osc_medium"
         app:backgroundTint="@color/red"
         android:layout_weight="1"
+        app:iconTintMode="multiply"
+
         />
 
 </LinearLayout>

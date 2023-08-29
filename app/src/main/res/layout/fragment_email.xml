@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/p10"
+    android:background="@color/white"
+    tools:context=".Fragment.login.EmailFragment">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue With Email"
+        android:textColor="@color/black"
+        android:fontFamily="@font/osc_medium"
+        android:layout_marginTop="@dimen/s20"
+        android:textSize="24sp"
+        android:drawableStart="@drawable/baseline_arrow_back_24"
+        android:drawablePadding="@dimen/p20"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email or Username"
+        android:fontFamily="@font/osc_medium"
+        android:layout_marginTop="100dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:fontFamily="@font/osc_bold1"
+        android:textSize="@dimen/s20"
+        android:focusable="true"
+        android:inputType="textEmailAddress"
+
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/grey"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="Continue"
+
+            android:textColor="@color/brown"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

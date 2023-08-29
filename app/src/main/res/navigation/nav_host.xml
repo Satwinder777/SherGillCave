@@ -2,7 +2,7 @@
     <navigation xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
-        app:startDestination="@id/DeliveryFragment"
+        app:startDestination="@id/loginFragmentDemo"
      >
 
         <fragment
@@ -249,6 +249,26 @@
         android:name="com.example.zomatopbs.Fragment.navigationfragment.money.ActivateWalletFragment"
         android:label="fragment_activate_wallet"
         tools:layout="@layout/fragment_activate_wallet" />
+    <fragment
+        android:id="@+id/loginFragmentDemo"
+        android:name="com.example.zomatopbs.Fragment.login.LoginFragmentDemo"
+        android:label="fragment_login_demo"
+        tools:layout="@layout/fragment_login_demo" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.zomatopbs.Fragment.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <dialog
+        android:id="@+id/loginFaceBookFragment"
+        android:name="com.example.zomatopbs.Fragment.login.LoginFaceBookFragment"
+        android:label="fragment_login_face_book"
+        tools:layout="@layout/fragment_login_face_book" />
+    <fragment
+        android:id="@+id/emailFragment"
+        android:name="com.example.zomatopbs.Fragment.login.EmailFragment"
+        android:label="fragment_email"
+        tools:layout="@layout/fragment_email" />
 
 </navigation>
 

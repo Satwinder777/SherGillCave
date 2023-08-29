@@ -27,5 +27,13 @@ class MainActivity : AppCompatActivity() {
         navController = navHostFragment.navController
         bottomNavigationView = binding.bottomNavigation
         NavigationUI.setupWithNavController(bottomNavigationView, navController)
+
+
+
+
+        val startDestinationId = R.id.DeliveryFragment // Replace with your actual start destination ID
+        val navGraph = navController.navInflater.inflate(R.navigation.nav_host)
+        navGraph.setStartDestination(startDestinationId)
+        navController.graph = navGraph
     }
 }
