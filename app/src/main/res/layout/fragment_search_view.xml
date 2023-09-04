@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/my_bg_color"
+    android:orientation="vertical"
+    tools:context=".Fragment.navigationfragment.delivery.SearchViewFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/my_chip_bg"
+       android:padding="@dimen/p10"
+       android:orientation="horizontal">
+       <EditText
+           android:id="@+id/mySearchFood"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Restaurant name or a dish...."
+           android:drawableEnd="@drawable/vertical_line"
+           android:drawableStart="@drawable/search_icon1"
+           android:drawablePadding="@dimen/p8"
+           android:layout_weight="1"
+           android:background="@android:color/transparent"
+           android:focusable="true"
+           android:singleLine="true"
+           android:layout_marginEnd="@dimen/p8"
+           android:fontFamily="@font/osc_bold1"
+           />
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/recorder_1_icon"
+           android:layout_gravity="center_vertical"
+           />
+   </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/myTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+
+        />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/myViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        />
+
+</LinearLayout>

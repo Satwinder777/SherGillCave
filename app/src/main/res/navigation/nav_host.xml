@@ -269,6 +269,16 @@
         android:name="com.example.zomatopbs.Fragment.login.EmailFragment"
         android:label="fragment_email"
         tools:layout="@layout/fragment_email" />
+    <fragment
+        android:id="@+id/personalDetails"
+        android:name="com.example.zomatopbs.Fragment.login.PersonalDetails"
+        android:label="activity_personal_details"
+        tools:layout="@layout/activity_personal_details" />
+    <fragment
+        android:id="@+id/searchViewFragment"
+        android:name="com.example.zomatopbs.Fragment.navigationfragment.delivery.SearchViewFragment"
+        android:label="fragment_search_view"
+        tools:layout="@layout/fragment_search_view" />
 
 </navigation>
 

@@ -44,13 +44,16 @@
 
                 <TextView
                     android:id="@+id/recomm_title1"
-                    android:layout_width="match_parent"
+                    android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="8dp"
                     android:text="Introducing "
                     android:textColor="@color/black"
                     android:layout_weight="1"
                     android:fontFamily="@font/osc_bold1"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+
                     />
 
                 <TextView
@@ -59,18 +62,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="8dp"
-                    android:text="Possibilitty Gold"
+                    android:text="35- 40 Mint"
+                    android:singleLine="true"
                     android:textSize="13sp"
                     android:layout_weight="1"
                     android:drawableStart="@drawable/timer_ic"
                     android:gravity="center_vertical"
                     android:textColor="@color/black"
                     android:drawablePadding="2dp"
+                    android:fontFamily="@font/osc_medium"
+
                     />
                 <TextView
 
                     android:id="@+id/recomm_offer1"
-                    android:layout_width="match_parent"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="8dp"
                     android:text="You are invited1 "
@@ -79,6 +85,9 @@
                     android:textSize="10sp"
                     android:layout_weight="1"
                     android:drawablePadding="2dp"
+                    android:fontFamily="@font/osc_medium"
+                    android:ellipsize="end"
+                    android:singleLine="true"
 
                     tools:ignore="MissingConstraints" />
             </LinearLayout>

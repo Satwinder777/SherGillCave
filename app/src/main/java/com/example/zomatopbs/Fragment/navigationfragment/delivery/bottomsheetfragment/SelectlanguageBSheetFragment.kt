@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.view.ContextThemeWrapper
+import androidx.core.view.get
 import com.example.zomatopbs.R
 import com.example.zomatopbs.databinding.FragmentSelectlanguageBSheetBinding
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
@@ -28,6 +29,22 @@ class SelectlanguageBSheetFragment : BottomSheetDialogFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+      binding.radgroup.get(0).setOnClickListener {
+          this.dismiss()
+      }
+        binding.radgroup.get(1).setOnClickListener {
+            this.dismiss()
+
+        }
+        binding.radgroup.get(2).setOnClickListener {
+            this.dismiss()
+
+        }
+        binding.radgroup.get(3).setOnClickListener {
+            this.dismiss()
+
+        }
 
     }
 

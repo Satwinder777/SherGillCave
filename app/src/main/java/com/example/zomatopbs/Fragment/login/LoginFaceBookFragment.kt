@@ -14,9 +14,11 @@ import android.widget.Toast
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.example.zomatopbs.DataClasses.userDetail
 import com.example.zomatopbs.MainActivity
 import com.example.zomatopbs.R
 import com.example.zomatopbs.databinding.FragmentLoginFaceBookBinding
+import com.example.zomatopbs.loginVia
 import com.example.zomatopbs.objects.Allfun
 import com.example.zomatopbs.objects.MyConstant
 import com.example.zomatopbs.sharephref.SharedPreferencesHelper
@@ -110,11 +112,16 @@ class LoginFaceBookFragment(val onclickmail : onclickGmail) : BottomSheetDialogF
                     task->
 
                     if (task.isSuccessful){
-                        val email = task.result.user?.email
-                        SharedPreferencesHelper(requireContext()).saveString(MyConstant.key,email.toString())
-                        val intent = Intent(requireContext(),MainActivity::class.java)
-                        startActivity(intent)
-                        Toast.makeText(requireContext(), "$email", Toast.LENGTH_SHORT).show()
+                        val user = task.result.user
+//                        SharedPreferencesHelper(requireContext()).saveString(MyConstant.key,user?.email.toString())
+
+                        Allfun.OpenActivity(requireContext(),MainActivity::class.java
+                        , userDetail(user?.displayName.toString(),user?.email.toString(),user?.phoneNumber.toString(),loginVia.LOGINVIA_GMAIL)
+                        )
+
+                        Toast.makeText(requireContext(), "${user?.email}", Toast.LENGTH_SHORT).show()
+                        SharedPreferencesHelper(requireContext()).saveString(MyConstant.loginkey,loginVia.LOGINVIA_FACEBOOK.toString())
+                        requireActivity().finish()
                     }else{
                         Toast.makeText(requireContext(), task.exception?.message, Toast.LENGTH_SHORT).show()
                     }

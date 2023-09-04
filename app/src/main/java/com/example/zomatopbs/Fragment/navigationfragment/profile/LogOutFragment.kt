@@ -1,6 +1,8 @@
 package com.example.zomatopbs.Fragment.navigationfragment.profile
 
 import android.app.Dialog
+import android.content.Context
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
@@ -10,12 +12,17 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
 import androidx.navigation.fragment.findNavController
+import com.example.zomatopbs.Fragment.login.NavActivity
 import com.example.zomatopbs.R
 import com.example.zomatopbs.databinding.FragmentLogOutBinding
 import com.example.zomatopbs.sharephref.SharedPreferencesHelper
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.auth.FirebaseAuth
 
 
-class LogOutFragment : DialogFragment() {
+class LogOutFragment(val onLogOuut:OnLogoutUser) : DialogFragment() {
 
     private lateinit var binding : FragmentLogOutBinding
 
@@ -45,9 +52,24 @@ class LogOutFragment : DialogFragment() {
         }
         binding.currentDevice.setOnClickListener {
             this.dismiss()
+
             SharedPreferencesHelper(requireContext()).clearAllData()
-            findNavController().navigateUp()
-            findNavController().popBackStack()
+
+            requireActivity().finish()
+
+
+            val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestIdToken(getString(R.string.default_web_client_id))
+                .requestEmail()
+                .build()
+
+         GoogleSignIn.getClient(requireActivity(), gso).signOut()
+            val intent = Intent(context, NavActivity::class.java)
+            startActivity(intent)
+
+// Sign out the user.
+
+
         }
         binding.allDevices.setOnClickListener {
             this.dismiss()
@@ -58,5 +80,9 @@ class LogOutFragment : DialogFragment() {
 
     }
 
+    interface OnLogoutUser{
 
+        fun whenUserLogged(msg:String,context: Context)
+
+    }
 }

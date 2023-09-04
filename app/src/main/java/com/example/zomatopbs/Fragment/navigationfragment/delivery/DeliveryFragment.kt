@@ -1,5 +1,7 @@
 package com.example.zomatopbs.Fragment.navigationfragment.delivery
 
+import android.annotation.SuppressLint
+import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -7,15 +9,26 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.os.bundleOf
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.get
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.zomatopbs.Fragment.navigationfragment.delivery.adapter.*
 import com.example.zomatopbs.Fragment.navigationfragment.delivery.bottomsheetfragment.SelectlanguageBSheetFragment
 import com.example.zomatopbs.Fragment.navigationfragment.delivery.bottomsheetfragment.SortBSheetFragment
+import com.example.zomatopbs.Fragment.navigationfragment.delivery.viewmodel.DeliveryViewModel
+import com.example.zomatopbs.Fragment.navigationfragment.profile.LogOutFragment
+import com.example.zomatopbs.Fragment.navigationfragment.profile.ProfileFragment
+import com.example.zomatopbs.Interfaces.apimodel.PizzaListResponce
 import com.example.zomatopbs.R
 import com.example.zomatopbs.databinding.ActivityCountryCodePickerBinding
 import com.example.zomatopbs.databinding.FragmentDeliveryBinding
+import com.example.zomatopbs.loginVia
 import com.example.zomatopbs.objects.Allfun
+import com.example.zomatopbs.sharephref.SharedPreferencesHelper
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class DeliveryFragment : Fragment() ,RecommendedItemAdapter.onRecommendedItemClick,OfferItemAdapter.OnOfferItemClick{
     private lateinit var binding: FragmentDeliveryBinding
@@ -25,6 +38,7 @@ class DeliveryFragment : Fragment() ,RecommendedItemAdapter.onRecommendedItemCli
     lateinit var offerrc :RecyclerView
     lateinit var recommendedrc :RecyclerView
     lateinit var sortingrc :RecyclerView
+    lateinit var deliveryViewModel: DeliveryViewModel
 
 
     override fun onCreateView(
@@ -33,22 +47,24 @@ class DeliveryFragment : Fragment() ,RecommendedItemAdapter.onRecommendedItemCli
     ): View? {
         // Inflate the layout for this fragment
         binding = FragmentDeliveryBinding.inflate(layoutInflater)
+        deliveryViewModel = ViewModelProvider(this).get(DeliveryViewModel::class.java)
 
         offerrc = binding.offerrc
         val delivertIns = deliveryData.data
         offerAdapter = OfferItemAdapter(delivertIns.initData(deliveryData.OfferModelCls1) as MutableList<OfferModelCls>,this)
         offerrc.adapter = offerAdapter
 
-
+//tjtdjdt
         recommendedrc = binding.recommrc
-        recommendedAdapter = RecommendedItemAdapter(delivertIns.initData(deliveryData.recommendItemData1) as MutableList<recommendItemData> ,this)
+        recommendedAdapter = RecommendedItemAdapter(null,this)
+
         recommendedrc.adapter = recommendedAdapter
 
         sortingrc = binding.sortrc
         sortingAdapter = SortingRecyclerAdapter(delivertIns.initData(deliveryData.MyString1) as MutableList<String> )
         sortingrc.adapter = sortingAdapter
-
-
+        isGuest(requireContext())
+        initAllData()
         return binding.root
     }
 
@@ -68,6 +84,9 @@ class DeliveryFragment : Fragment() ,RecommendedItemAdapter.onRecommendedItemCli
         binding.profileIcon.setOnClickListener {
             findNavController().navigate(R.id.profileFragment)
         }
+        binding.menuBtn.setOnClickListener {
+            findNavController().navigate(R.id.profileFragment)
+        }
         binding.languageBtn.setOnClickListener {
            val bottomSheetFragment = SelectlanguageBSheetFragment()
             bottomSheetFragment.show(requireFragmentManager(), bottomSheetFragment.tag)
@@ -76,6 +95,19 @@ class DeliveryFragment : Fragment() ,RecommendedItemAdapter.onRecommendedItemCli
             val sort = SortBSheetFragment()
 
             sort.show(requireFragmentManager(),"sortDailog")
+        }
+        binding.myOfficialCard.setOnClickListener{
+
+        }
+        deliveryViewModel.livePizzaData.observe(requireActivity(), Observer {
+            data->
+            recommendedAdapter.list = data
+            recommendedrc.adapter = recommendedAdapter
+            recommendedAdapter.notifyDataSetChanged()
+        })
+
+        binding.myEditText.setOnClickListener {
+            findNavController().navigate(R.id.searchViewFragment)
         }
     }
 
@@ -100,12 +132,35 @@ class DeliveryFragment : Fragment() ,RecommendedItemAdapter.onRecommendedItemCli
         }
     }
 
+     fun isGuest(context: Context):Boolean{
+       val data = SharedPreferencesHelper(context).getUserDetails()?.loginVia
+        return when(data){
+            loginVia.LOGINVIA_GUEST->{
+                binding.profileIcon.visibility = View.GONE
+                binding.menuBtn.visibility = View.VISIBLE
+
+                Log.e("datatype", "isGuest: $data", )
+                return true
+            }
+            else->{
+                binding.profileIcon.visibility = View.VISIBLE
+                binding.menuBtn.visibility = View.GONE
+                Log.e("datatype", "isGuest: $data", )
+                return false
+            }
+        }
+    }
+
+private fun initAllData(){
+    deliveryViewModel.getPizzaList()
+}
+
 
 }
 enum class deliveryData{
     OfferModelCls1,
-    MyString1,
-    recommendItemData1;
+    MyString1;
+//    recommendItemData1;
 companion object data{
     fun initData(deliveryData: deliveryData):MutableList<*> {
         return when(deliveryData){
@@ -117,14 +172,15 @@ companion object data{
                 val list = mutableListOf<String>("Pure veg","fastDelivery","delicious","super",)
                 return list
             }
-            recommendItemData1->{
-                val list = mutableListOf<recommendItemData>(recommendItemData(R.drawable.pizza1,R.drawable.pizza2,"title1","title2","text1","text2","offer_1","offer_2")
-                ,recommendItemData(R.drawable.pizza1,R.drawable.pizza2,"title1","title2","text1","text2","offer_1","offer_2"),
-                    recommendItemData(R.drawable.pizza1,R.drawable.pizza2,"title1","title2","text1","text2","offer_1","offer_2"),recommendItemData(R.drawable.pizza1,R.drawable.pizza2,"title1","title2","text1","text2","offer_1","offer_2")
-                        ,recommendItemData(R.drawable.pizza1,R.drawable.pizza2,"title1","title2","text1","text2","offer_1","offer_2")
-                )
-                return list
-            }
+//            recommendItemData1->{
+////                val list = mutableListOf<recommendItemData>(recommendItemData(R.drawable.pizza1,R.drawable.pizza2,"title1","title2","text1","text2","offer_1","offer_2")
+////                ,recommendItemData(R.drawable.pizza1,R.drawable.pizza2,"title1","title2","text1","text2","offer_1","offer_2"),
+////                    recommendItemData(R.drawable.pizza1,R.drawable.pizza2,"title1","title2","text1","text2","offer_1","offer_2"),recommendItemData(R.drawable.pizza1,R.drawable.pizza2,"title1","title2","text1","text2","offer_1","offer_2")
+////                        ,recommendItemData(R.drawable.pizza1,R.drawable.pizza2,"title1","title2","text1","text2","offer_1","offer_2")
+////                )
+//                val list:PizzaListResponce ?= null
+//                return list
+//            }
 
         }
     }

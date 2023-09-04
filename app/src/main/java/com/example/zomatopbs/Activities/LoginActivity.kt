@@ -1,34 +1,8 @@
 package com.example.zomatopbs.Activities
 
-import android.app.Activity
-import android.content.Intent
-import android.content.SharedPreferences
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
-import android.util.Log
-import android.view.View
-import android.widget.Toast
-import androidx.core.widget.addTextChangedListener
-import androidx.fragment.app.Fragment
-import com.example.zomatopbs.Fragment.login.EmailFragment
-import com.example.zomatopbs.Fragment.login.LoginFaceBookFragment
-import com.example.zomatopbs.Fragment.login.LoginFragment
-import com.example.zomatopbs.MainActivity
-import com.example.zomatopbs.R
+import androidx.appcompat.app.AppCompatActivity
 import com.example.zomatopbs.databinding.ActivityLoginBinding
-import com.example.zomatopbs.objects.Allfun
-import com.example.zomatopbs.objects.MyConstant
-import com.google.android.gms.auth.api.signin.GoogleSignIn
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount
-import com.google.android.gms.auth.api.signin.GoogleSignInClient
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions
-import com.google.android.gms.common.api.ApiException
-import com.google.android.gms.tasks.Task
-import com.google.firebase.FirebaseApp
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.GoogleAuthProvider
 
 class LoginActivity : AppCompatActivity() {
 

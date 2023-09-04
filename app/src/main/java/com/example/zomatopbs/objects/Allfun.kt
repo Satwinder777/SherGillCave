@@ -7,18 +7,25 @@ import android.util.Log
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
 import androidx.core.content.ContextCompat.startActivity
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.commit
+import com.example.zomatopbs.DataClasses.userDetail
 import com.example.zomatopbs.Fragment.navigationfragment.profile.AboutFragment
 import com.example.zomatopbs.R
+import com.example.zomatopbs.loginVia
+import com.example.zomatopbs.sharephref.SharedPreferencesHelper
 
 object Allfun {
 
 
-    fun OpenActivity(context: Context, targetActivity: Class<*>) {
+    fun OpenActivity(context: Context, targetActivity: Class<*>,user_details: userDetail) {
         val intent = Intent(context, targetActivity)
+        intent.putExtra(MyConstant.userlogin_key,user_details)
         context.startActivity(intent)
+        SharedPreferencesHelper(context).saveUserDetails(user_details)
+
     }
     fun OpenFragment(manager: FragmentManager,to:Fragment) {
 //        val newFragment = AboutFragment()
@@ -61,7 +68,7 @@ object Allfun {
     }
 
     fun UnderDevelopment(context: Context){
-        Toast.makeText(context, "UnderDevlopment", Toast.LENGTH_SHORT).show()
+        Toast.makeText(context, "UnderDevlopment shergill", Toast.LENGTH_SHORT).show()
     }
 
 //    fun goBack(screenType: screenType) {

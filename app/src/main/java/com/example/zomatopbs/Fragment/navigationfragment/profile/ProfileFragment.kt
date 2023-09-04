@@ -7,16 +7,19 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
+import com.example.zomatopbs.DataClasses.userDetail
+import com.example.zomatopbs.Fragment.navigationfragment.delivery.DeliveryFragment
 import com.example.zomatopbs.Fragment.navigationfragment.delivery.FeedingIndiaFragment
 import com.example.zomatopbs.MainActivity
 import com.example.zomatopbs.R
 import com.example.zomatopbs.databinding.FragmentProfileBinding
+import com.example.zomatopbs.loginVia
 import com.example.zomatopbs.objects.Allfun
 import com.example.zomatopbs.objects.MyConstant
 import com.example.zomatopbs.sharephref.SharedPreferencesHelper
 
 
-class ProfileFragment : Fragment() {
+class ProfileFragment() : Fragment() {
     private  lateinit var binding : FragmentProfileBinding
 
 
@@ -29,11 +32,16 @@ class ProfileFragment : Fragment() {
 
         initUi()
 
+
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        binding.continBtn.setOnClickListener {
+            requireActivity().finish()
+        }
         binding.backBtnProfile.setOnClickListener {
             requireActivity().onBackPressed()
         }
@@ -120,7 +128,7 @@ class ProfileFragment : Fragment() {
             Toast.makeText(requireContext(), "underdevelopment", Toast.LENGTH_SHORT).show()
         }
          binding.logoutuser.setOnClickListener {
-            LogOutFragment().show(requireFragmentManager(),MyConstant.tag)
+            LogOutFragment(MainActivity().olUser()).show(requireFragmentManager(),MyConstant.tag)
             Toast.makeText(requireContext(), "underdevelopment", Toast.LENGTH_SHORT).show()
         }
 
@@ -167,11 +175,54 @@ class ProfileFragment : Fragment() {
 
 
     private fun initUi(){
-       val data =  SharedPreferencesHelper(requireContext()).getString(MyConstant.key,MyConstant.defaultValue)
-        val mail = data
-        binding.mailTextView.text = data
-        val firstChar = data.get(0)
-        binding.editprofile.setText(firstChar.toString())
+
+        val data = SharedPreferencesHelper(requireContext()).getUserDetails()?.loginVia
+
+        when(data){
+            loginVia.LOGINVIA_GUEST->{
+                binding.guestCard.visibility = View.VISIBLE
+                binding.userCard.visibility = View.GONE
+            }
+            else->{
+                binding.guestCard.visibility = View.GONE
+                binding.userCard.visibility = View.VISIBLE
+
+                val data =  SharedPreferencesHelper(requireContext()).getUserDetails()
+                val mail = data?.email
+
+                when(data?.loginVia){
+                    loginVia.LOGINVIA_PHONE->{
+                        binding.nameTextView.setText(data?.name)
+                        binding.editprofile.setText(data?.name?.get(0).toString())
+                        binding.mailTextView.text = data.phone.toString()?:"emptydata"
+                    }
+                    loginVia.LOGINVIA_GMAIL->{
+                        binding.nameTextView.setText(data?.name)
+                        binding.editprofile.setText(data?.name?.get(0).toString())
+                        binding.mailTextView.text = mail
+                    }
+                    loginVia.LOGINVIA_EMAIL->{
+                        binding.nameTextView.setText(data?.name)
+                        binding.editprofile.setText(data?.name?.get(0).toString())
+                        binding.mailTextView.text = mail
+                    }
+                    loginVia.LOGINVIA_FACEBOOK->{
+                        binding.nameTextView.setText(data?.name)
+                        binding.editprofile.setText(data?.name?.get(0).toString())
+                        binding.mailTextView.text = mail
+                    }
+
+                    else -> {
+                        Toast.makeText(requireContext(), "user guest", Toast.LENGTH_SHORT).show()
+                        binding.logoutuser.visibility = View.GONE
+                    }                      //guest
+                }
+
+
+            }
+        }
+
     }
+
 
 }

@@ -10,7 +10,11 @@ import com.example.zomatopbs.Fragment.login.NavActivity
 import com.example.zomatopbs.MainActivity
 import com.example.zomatopbs.R
 import com.example.zomatopbs.SplaceData.viewmodel.SplaceViewModel
+import com.example.zomatopbs.loginVia
+import com.example.zomatopbs.objects.Allfun
+import com.example.zomatopbs.objects.MyConstant
 import com.example.zomatopbs.sharephref.SharedPreferencesHelper
+import com.google.gson.Gson
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.Runnable
@@ -31,7 +35,12 @@ class SplaceScreenActivity : AppCompatActivity() {
 //        sharephref.
         Handler().postDelayed({
             if (isUserLogged()==true){
-                startActivity(Intent(this, MainActivity::class.java))
+//                val m_data = SharedPreferencesHelper(this).getString(MyConstant.loginkey,MyConstant.defaultValue)
+
+                SharedPreferencesHelper(this).loginType()
+                    ?.let { SharedPreferencesHelper(this).getUserDetails()
+                        ?.let { it1 -> Allfun.OpenActivity(this,MainActivity::class.java, it1) } }
+
 //                finish()
             }
             else{

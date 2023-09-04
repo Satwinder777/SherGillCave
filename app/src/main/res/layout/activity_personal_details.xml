@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/p20"
+    android:background="@color/white"
+    tools:context=".Fragment.login.PersonalDetails">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stroke_brown"
+            android:padding="5dp"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s20"
+            android:fontFamily="@font/osc_bold1"
+            android:text="Personal Details"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s20"
+            android:fontFamily="@font/osc_bold1"
+            android:text="Tell us a bit more about yourself"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/osc_bold1"
+            android:text="name"
+            android:textColor="@color/brown"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:fontFamily="@font/osc_medium"
+            android:textColor="@color/black"
+            android:inputType="textPersonName"
+            android:imeOptions="actionGo"
+
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:drawableStart="@drawable/whatsapp_icon"
+        android:drawableEnd="@drawable/check_icon"
+        android:drawablePadding="@dimen/d8"
+        android:fontFamily="@font/osc_medium"
+        android:gravity="center_vertical"
+        android:text="Send me updates on Whatsapp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/getDataBtn"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/getDataBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:fontFamily="@font/osc_medium"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="20dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
